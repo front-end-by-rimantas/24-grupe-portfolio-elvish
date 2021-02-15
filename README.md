@@ -9,7 +9,7 @@ _24 group portfolio website project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
 
-Site published at https://front-end-by-rimantas.github.io/24-grupe-portfolio/
+Site published at https://front-end-by-rimantas.github.io/24-grupe-portfolio-elvish/
 
 Design: [Martin](http://inventheme.com/themeforest/martin/)
 
