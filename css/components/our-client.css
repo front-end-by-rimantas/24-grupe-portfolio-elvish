@@ -56,15 +56,17 @@
 }
 
 .client-logos > img {
-    height: 100px;
-    
+    height: 100px;   
 }
 
 /* Subscribe */
 
 .form {
     background-color: #f1f1f1;
-    width: 570px;
+    width: 100%;
+    border-radius: 43px;
+    margin-top: 50px;
+    position: relative;
 }
 
 .form > label {
@@ -73,12 +75,27 @@
 
 .form > input {
     display: inline-block;
-    width: 85%;
     background-color: #f1f1f1;
+    color: #4c5667;
+    width: 75%;
     border: none;
+    padding: 15px 20px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-radius: 43px;
+    
 }
 
 .form > button {
     display: inline-block;
-    width: 15%;
+    padding: 12px 28px;
+    font-size: 17px;
+    border-radius: 30px;
+    border: none;
+    background-color: #000;
+    color: white;
+    position: absolute;
+    top: 3px;
+    right: 4px;
 }
