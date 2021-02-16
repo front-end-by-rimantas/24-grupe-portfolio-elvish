@@ -1,4 +1,4 @@
-const data = [
+const workData = [
 {
     // frame
     id: 1,
@@ -49,3 +49,5 @@ const data = [
 },
 
 ]
+
+export {workData};
