@@ -4,8 +4,9 @@
 /* CUSTOM HOME PAGE CSS */
 
 /* Nav */
+@import './components/nav-bar.css';
 /* Hero */
-/* About */
+@import './components/hero.css'; /* About */
 /* Services */
 /* Stataistics */
 /* Education */
