@@ -17,6 +17,7 @@
 /* Trusted Clients */
 /* Subscribe */
 /* Blog */
-@import './components/blog.css'
+@import './components/blog.css';
 /* Contact */
+@import './components/contact.css';
 /* Footer */

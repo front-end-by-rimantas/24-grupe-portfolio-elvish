@@ -1,0 +1,13 @@
+.contact {
+    background-color: #fff;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contact-box {
+
+}
