@@ -7,21 +7,25 @@
 .short-row {
     display: inline-block;
     width: 570px;
-    margin-left: calc((100% - 570px) / 2);
+    margin: 0 calc((100% - 570px) / 2);
 }
 
 @media (max-width:992px) {
     .long-row {
         max-width: 690px;
-        margin-left: 0 calc((100% - 690px) / 2);
+        margin: 0 calc((100% - 690px) / 2);
     }
 
 }
 
 @media (max-width:688px) {
-    .long-row,
-    .short-row {
+    .long-row {
         max-width: 100%;
         padding: 0px 15px;
+    }
+    .short-row {
+        max-width: 510px;
+        margin: 0 calc((100% - 510px) / 2);
+        padding: 0 30px;
     }
 }
