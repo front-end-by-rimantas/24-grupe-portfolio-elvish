@@ -1,20 +1,23 @@
 @import './components/reset.css';
 @import './components/layout.css';
-@import './components/custom.css';
+@import './components/variables.css';
 
 /* CUSTOM HOME PAGE CSS */
 
 /* Nav */
+@import './components/nav-bar.css';
 /* Hero */
-/* About */
+@import './components/hero.css'; /* About */
 /* Services */
 /* Stataistics */
 /* Education */
 /* Available Freelancer */
+@import './components/freelancer.css';
 /* Work */
 /* Client */
 /* Trusted Clients */
 /* Subscribe */
 /* Blog */
+@import './components/blog.css'; 
 /* Contact */
 /* Footer */
