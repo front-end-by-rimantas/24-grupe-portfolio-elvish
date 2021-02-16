@@ -1,0 +1,101 @@
+@import './variables.css';
+/* Global css for all sections */
+.heading-2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.heading-2 > span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.subtext {
+    text-align: center;
+    margin: 8px 0 16px 0;
+}
+
+.before-span {
+    text-align: center;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+/* Our client */
+.our-clients-bg {
+    background-color: var(--gray-bg);
+    background-image: url(../../img/Client/our-client-mountain.jpg);
+    background-repeat: no-repeat;
+    background-position-y: center ;
+    background-position-x: center ;
+    height: 500px;
+    width: 100%;
+    color: var(--white-bg);
+}
+
+.carouselle {
+    display: block;
+    text-align: center;
+}
+
+/* Trusted Clients */
+.section-gray-bg {
+    background-color: var(--gray-bg);
+    padding: 80px 0;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.client-logos > img {
+    height: 100px;   
+}
+
+/* Subscribe */
+
+.form {
+    background-color: #f1f1f1;
+    width: 100%;
+    border-radius: 43px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.form > label {
+    font-size: 0;
+}
+
+.form > input {
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: #4c5667;
+    width: 75%;
+    border: none;
+    padding: 15px 20px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-radius: 43px;
+    
+}
+
+.form > button {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 17px;
+    border-radius: 30px;
+    border: none;
+    background-color: #000;
+    color: white;
+    position: absolute;
+    top: 3px;
+    right: 4px;
+}

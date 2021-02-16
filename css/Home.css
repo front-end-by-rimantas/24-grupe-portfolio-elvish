@@ -9,12 +9,13 @@
 /* Hero */
 @import './components/hero.css'; /* About */
 /* Services */
-/* Stataistics */
+/* Statistics */
 /* Education */
 /* Available Freelancer */
 @import './components/freelancer.css';
 /* Work */
 /* Client */
+@import './components/our-client.css';
 /* Trusted Clients */
 /* Subscribe */
 /* Blog */
