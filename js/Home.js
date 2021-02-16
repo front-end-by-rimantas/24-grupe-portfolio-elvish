@@ -1,6 +1,6 @@
 
 // Nav
-import {navScroll} from './nav-bar.js'
+import {navScroll} from './components/nav-bar.js'
 navScroll();
 // Hero
 // About
