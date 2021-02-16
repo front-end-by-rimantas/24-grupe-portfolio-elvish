@@ -7,7 +7,9 @@
 /* Nav */
 @import './components/nav-bar.css';
 /* Hero */
-@import './components/hero.css'; /* About */
+@import './components/hero.css'; 
+/* About */
+@import './components/about-me.css';
 /* Services */
 /* Statistics */
 /* Education */
