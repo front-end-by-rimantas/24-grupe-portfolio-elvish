@@ -1,6 +1,65 @@
 .hero {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-image: url(/img/Hero/hero_background.png);
+  background-size: cover;
+  background-position: center center;
   width: 100%;
   min-height: 100vh;
   margin-bottom: 200px;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.589);
+}
+.hero-row {
+  z-index: 9;
+}
+
+.welcoming {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.welcoming > h2 {
+  font-size: 25px;
+  font-family: montserrat;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.welcoming > h1 {
+  font-size: 75px;
+  font-family: montserrat;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+.hero-socials {
+  background-color: rgba(245, 245, 220, 0.199);
+  padding: 10px;
+  margin: 25px;
+}
+.hero-link {
+  text-decoration: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 18px;
+  border: 3px solid white;
+  transition: ease-in-out 0.3s;
+}
+.hero-link > span {
+  text-transform: uppercase;
+}
+.hero-link:hover {
+  background-color: white;
+  color: var(--text-gray);
 }
