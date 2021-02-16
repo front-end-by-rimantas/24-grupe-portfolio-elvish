@@ -1,7 +1,7 @@
 .long-row {
     display: inline-block;
     width: 1110px;
-    margin-left: calc((100% - 1110px) / 2);
+    margin: 0 calc((100% - 1110px) / 2);
 }
 
 .short-row {
@@ -12,13 +12,16 @@
 
 @media (max-width:992px) {
     .long-row {
-        width: 690px;
+        max-width: 690px;
+        margin-left: 0 calc((100% - 690px) / 2);
     }
+
 }
 
 @media (max-width:688px) {
     .long-row,
     .short-row {
-        width: 100%;
+        max-width: 100%;
+        padding: 0px 15px;
     }
 }
