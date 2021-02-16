@@ -1,5 +1,7 @@
 
 // Nav
+import {navScroll} from './nav-bar.js'
+navScroll();
 // Hero
 // About
 // Services
