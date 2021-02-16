@@ -1,5 +1,6 @@
 @import './components/reset.css';
 @import './components/layout.css';
+@import './components/variables.css';
 
 /* CUSTOM HOME PAGE CSS */
 
@@ -16,5 +17,6 @@
 /* Trusted Clients */
 /* Subscribe */
 /* Blog */
+@import './components/blog.css'
 /* Contact */
 /* Footer */
