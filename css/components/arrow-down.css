@@ -1,0 +1,47 @@
+.arrow-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  border: 2px solid white;
+  height: 50px;
+  width: 30px;
+  border-radius: 25px;
+  z-index: 9;
+  animation-name: arrowAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+.arrow-down:after {
+  content: '\276E';
+  font-size: 15px;
+  transform: rotate(-90deg);
+  margin-top: 15px;
+  color: white;
+}
+
+@keyframes arrowAnimation {
+  0% {
+    bottom: 50px;
+  }
+  40% {
+    bottom: 80px;
+  }
+  50% {
+    bottom: 50px;
+  }
+  65% {
+    bottom: 60px;
+  }
+  75% {
+    bottom: 50px;
+  }
+  90% {
+    bottom: 55px;
+  }
+  100% {
+    bottom: 50px;
+  }
+}

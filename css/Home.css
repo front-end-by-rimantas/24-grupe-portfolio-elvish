@@ -7,7 +7,8 @@
 /* Nav */
 @import './components/nav-bar.css';
 /* Hero */
-@import './components/hero.css'; 
+@import './components/hero.css';
+@import './components/arrow-down.css';
 /* About */
 @import './components/about-me.css';
 @import './components/progress-bars.css';
@@ -22,7 +23,7 @@
 /* Trusted Clients */
 /* Subscribe */
 /* Blog */
-@import './components/blog.css'; 
+@import './components/blog.css';
 /* Contact */
 @import './components/contact.css';
 /* Footer */
