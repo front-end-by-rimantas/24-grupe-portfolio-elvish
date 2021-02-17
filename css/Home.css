@@ -14,11 +14,12 @@
 /* Available Freelancer */
 @import './components/freelancer.css';
 /* Work */
+@import './components/work.css';
 /* Client */
 @import './components/our-client.css';
 /* Trusted Clients */
 /* Subscribe */
 /* Blog */
-@import './components/blog.css'; 
+@import './components/blog.css';
 /* Contact */
 /* Footer */
