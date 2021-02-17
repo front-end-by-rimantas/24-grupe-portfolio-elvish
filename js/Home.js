@@ -1,5 +1,7 @@
 // IMPORTS
 // Nav
+import { navScroll } from './components/nav-bar.js'
+import {ham} from './components/hamburger.js'
 // Hero
 // About
 import { ProgressBar } from './components/Progress-bar.js'
@@ -19,7 +21,8 @@ import { rightProgressBar } from './data/progress-bars.js'
 
 // EXECUTION
 // Nav
-import { navScroll } from './components/nav-bar.js'
+
+ham();
 navScroll();
 // Hero
 // About

@@ -146,3 +146,18 @@
     font-size: 15px;
   }
 }
+
+@media (max-width: 770px) {
+  .hero {
+    min-height: 500px;
+  }
+  .welcoming > h1 {
+    font-size: 40px;
+  }
+  .welcoming > h1 > span {
+    font-size: 40px;
+  }
+  .hero-row {
+    margin-bottom: 10px;
+  }
+}

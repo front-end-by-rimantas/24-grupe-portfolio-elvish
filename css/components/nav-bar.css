@@ -9,12 +9,13 @@
 .nav-bar > .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  position: relative;
 }
+
 .nav {
+  position: absolute;
+  right: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 .nav-link {
   display: flex;
@@ -23,7 +24,8 @@
   position: relative;
   font-weight: 600;
   font-size: 16px;
-  padding: 0 15px;
+  line-height: 16px;
+  padding: 24px 15px;
   color: white;
   font-family: Nunito;
   cursor: pointer;
@@ -47,4 +49,22 @@
 }
 .nav-active > .container > .nav > .nav-link {
   color: black;
+}
+
+@media (max-width: 990px) {
+  .nav-link {
+    display: none;
+  }
+}
+@media (max-width: 770px) {
+  .nav-bar {
+    background-color: white;
+    padding: 0;
+  }
+  .white-logo {
+    display: none !important;
+  }
+  .black-logo {
+    display: block !important;
+  }
 }

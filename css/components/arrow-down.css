@@ -8,7 +8,7 @@
   height: 50px;
   width: 30px;
   border-radius: 25px;
-  z-index: 9;
+  z-index: 1;
   animation-name: arrowAnimation;
   animation-duration: 1.5s;
   animation-timing-function: ease-in;
@@ -16,6 +16,7 @@
 }
 .arrow-down:after {
   content: '\276E';
+  text-decoration: none;
   font-size: 15px;
   transform: rotate(-90deg);
   margin-top: 15px;
