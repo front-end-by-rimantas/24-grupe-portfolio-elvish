@@ -1,4 +1,29 @@
 @import './components/reset.css';
 @import './components/layout.css';
+@import './components/variables.css';
 
 /* CUSTOM HOME PAGE CSS */
+
+/* Nav */
+@import './components/nav-bar.css';
+/* Hero */
+@import './components/hero.css';
+@import './components/arrow-down.css';
+/* About */
+@import './components/about-me.css';
+@import './components/progress-bars.css';
+/* Services */
+/* Statistics */
+/* Education */
+/* Available Freelancer */
+@import './components/freelancer.css';
+/* Work */
+/* Client */
+@import './components/our-client.css';
+/* Trusted Clients */
+/* Subscribe */
+/* Blog */
+@import './components/blog.css';
+/* Contact */
+@import './components/contact.css';
+/* Footer */

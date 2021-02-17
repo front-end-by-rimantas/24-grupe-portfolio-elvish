@@ -1,0 +1,124 @@
+.about-me{
+    padding: 80px;
+}
+
+.about{
+    text-align: center;
+    color: #212529;
+    
+    }
+h2{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    font-size: 32px;
+    }
+ h3{
+     font-size: 28px;
+ }   
+ .highlight{
+     color: #000;
+ }
+.asterisk{
+
+    font-size: 40px;
+    margin: 20px 0;
+}
+.text{
+    color: #666666;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+.about > img{
+    margin: 40px 0;
+}
+.skills{
+    margin-top: 20px;
+    width: 100%;
+    display: inline-block;
+}
+.skill{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+
+.long-text{
+    width: 850px;
+    margin-left: calc((100% - 850px) / 2);
+    text-align: center;
+    margin-top: 20px;
+    
+}
+/* .progress-bars{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.left-progress,
+.right-progress {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.progress-bar{
+    margin-bottom: 20px;
+}
+
+.pTexts{
+    width: 90%;
+    margin: 0 2.5%;
+    
+}
+
+.pLabel{
+    display: inline-block;
+    float: left;
+}
+
+.pValue{
+    display: inline-block;
+    float: right;
+}
+
+.progress-bar > .bar  {
+    display: inline-block;
+    width: 90%;
+    height: 6px;
+    background-color: #ddd;
+    border-radius: 2px;
+    margin: 0 2.5%;
+    margin-top: 20px;
+}
+.progress-bar > .bar > .progress  {
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.progress-bar > .bar > .progress > .loading  {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+@keyframes loading{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+} */
+

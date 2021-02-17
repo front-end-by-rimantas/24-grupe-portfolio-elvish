@@ -1,0 +1,87 @@
+.contact {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.contacts {
+    display: flex;
+}
+
+.contact-boxes {
+    width: 35%;
+    text-align: center;
+}
+
+.contact-box {
+    margin: 25px;
+}
+
+.contact-text {
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+.contact-box > .icon,
+.contact-box > .contact-title,
+.contact-box > .contact-text {
+    margin-bottom: 8px;
+}
+
+.contact-box > .contact-title {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.form {
+    width: 65%;
+}
+
+.form > input,
+.form > textarea,
+.form-group > input {
+    display: inline-block;
+    width: 100%;
+    line-height: 22px;
+    border: 1px solid #cccccc;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form > textarea {
+    min-height: 100px;
+    max-height: 200px;
+    resize: vertical;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: 48%;
+}
+.form > label,
+.form-group > label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.form > .btn {
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 4px;
+    outline: none;
+    padding: 14px 24px;
+    cursor: pointer;
+}

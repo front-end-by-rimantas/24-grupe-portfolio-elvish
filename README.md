@@ -9,9 +9,9 @@ _24 group portfolio website project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
 
-Site published at https://front-end-by-rimantas.github.io/24-grupe-portfolio/
+Site published at https://front-end-by-rimantas.github.io/24-grupe-portfolio-elvish/
 
-Design: [Martin](http://inventheme.com/themeforest/martin/)
+Design: [Elvish](http://themesboss.com/elvish/index_6.html)
 
 ## Project features
 
@@ -25,6 +25,12 @@ Design: [Martin](http://inventheme.com/themeforest/martin/)
 
 ## Authors
 
-Rimantas: [Github](https://github.com/belauzas)
+Gilvydas: [Github](https://github.com/Gilvydas) [LinkedIn](www.linkedin.com/in/gilvydas-kuprevičius)<br>
+Mindaugas: [Github](https://github.com/MarkBukowski) [LinkedIn](https://www.linkedin.com/in/m-butkevicius/)<br>
+Paulius: [Github](https://github.com/PJarrr) [LinkedIn](www.linkedin.com/in/paulius-jarutis)<br>
+Tadas: [Github](https://github.com/tadas258) [LinkedIn](www.linkedin.com/in/tadas-jackevicius)<br>
+Vadim: [Github](https://github.com/vadimmozeiko) [LinkedIn](https://www.linkedin.com/in/vadim-mozeiko/)
 
-_susirašome savo vardus ir nuorodas į Github profilį ir/arba Linkedin profilį_
+
+
+
