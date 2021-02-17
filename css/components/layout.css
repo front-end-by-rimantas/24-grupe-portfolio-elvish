@@ -1,24 +1,30 @@
 .long-row {
     display: inline-block;
     width: 1110px;
-    margin-left: calc((100% - 1110px) / 2);
+    margin: 0 calc((100% - 1110px) / 2);
 }
 
 .short-row {
     display: inline-block;
     width: 570px;
-    margin-left: calc((100% - 570px) / 2);
+    margin: 0 calc((100% - 570px) / 2);
 }
 
 @media (max-width:992px) {
     .long-row {
-        width: 690px;
+        max-width: 690px;
+        margin: 0 calc((100% - 690px) / 2);
     }
 }
 
 @media (max-width:688px) {
-    .long-row,
-    .short-row {
+    .long-row{
         width: 100%;
+        margin: 0;
+    }
+    .short-row {
+        max-width: 510px;
+        margin: 0 calc((100% - 510px) / 2);
+        padding: 0 30px;
     }
 }
