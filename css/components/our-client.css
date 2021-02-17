@@ -95,17 +95,17 @@
     padding: 0 10px;
 }
 
-.form {
+.sub-form {
     width: 100%;
     margin: 50px 0 0 0;
     position: relative;
 }
 
-.form > label {
+.sub-form > label {
     font-size: 0;
 }
 
-.form > input {
+.sub-form > input {
     display: inline-block;
     background-color: #f1f1f1;
     color: #4c5667;
@@ -119,7 +119,7 @@
     
 }
 
-.form > button {
+.sub-form > button {
     display: inline-block;
     border: 2px solid #000;
     background-color: #000;
@@ -133,7 +133,7 @@
     transition: all 0.5s ease;
 }
 
-.form > button:hover {
+.sub-form > button:hover {
     background-color: #fff;
     color: #000;
 }
