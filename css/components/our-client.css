@@ -29,13 +29,18 @@
 /* Our client */
 .our-clients-bg {
     background-color: var(--gray-bg);
-    background-image: url(../../img/Client/our-client-mountain.jpg);
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../../img/Client/our-client-mountain.jpg);
     background-repeat: no-repeat;
-    background-position-y: center ;
-    background-position-x: center ;
+    background-size: cover;
+    background-position: center top;
     height: 500px;
     width: 100%;
-    color: var(--white-bg);
+    color: var(--gray-bg);
 }
 
 .carouselle {
@@ -59,13 +64,25 @@
     height: 100px;   
 }
 
+@media only screen and (max-width:992px) {
+    .client-logos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .client-logos > img {
+        margin: 10px calc((100% - 100px) / 2);
+    }
+}
+
 /* Subscribe */
 
+.sub-form-div {
+    padding: 0 25px;
+}
+
 .form {
-    background-color: #f1f1f1;
     width: 100%;
-    border-radius: 43px;
-    margin-top: 50px;
+    margin: 50px 0 0 0;
     position: relative;
 }
 
@@ -77,9 +94,9 @@
     display: inline-block;
     background-color: #f1f1f1;
     color: #4c5667;
-    width: 75%;
+    width: 100%;
     border: none;
-    padding: 15px 20px;
+    padding: 15px 150px 15px 30px;
     font-size: 17px;
     outline: none;
     border: none;
@@ -96,6 +113,6 @@
     background-color: #000;
     color: white;
     position: absolute;
-    top: 3px;
+    top: 25px;
     right: 4px;
 }
