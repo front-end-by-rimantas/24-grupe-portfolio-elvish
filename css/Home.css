@@ -7,17 +7,21 @@
 /* Nav */
 @import './components/nav-bar.css';
 /* Hero */
-@import './components/hero.css'; /* About */
+@import './components/hero.css'; 
+/* About */
+@import './components/about-me.css';
 /* Services */
-/* Stataistics */
+/* Statistics */
 /* Education */
 /* Available Freelancer */
+@import './components/freelancer.css';
 /* Work */
 /* Client */
+@import './components/our-client.css';
 /* Trusted Clients */
 /* Subscribe */
 /* Blog */
-@import './components/blog.css';
+@import './components/blog.css'; 
 /* Contact */
 @import './components/contact.css';
 /* Footer */
