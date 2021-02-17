@@ -3,9 +3,10 @@
 .heading-2 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 32px;
     margin-bottom: 8px;
+    color: #212529;
 }
 
 .heading-2 > span {
@@ -15,11 +16,17 @@
 
 .subtext {
     text-align: center;
+    color: #6c757d;
     margin: 8px 0 16px 0;
 }
 
-.before-span {
+.white-text {
+    color: #fff;
+}
+
+.separator-asterisk {
     text-align: center;
+    font-size: 32px;
 }
 
 .section {
@@ -35,12 +42,19 @@
       rgba(0, 0, 0, 0.7)
     ),
     url(../../img/Client/our-client-mountain.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
-    height: 500px;
-    width: 100%;
+    background-position: center center;
     color: var(--gray-bg);
+}
+
+.separator-asterisk::before,
+.separator-asterisk::after {
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    background-color: #c4c2c2;
+    width: 30px;
+    height: 2px;
 }
 
 .carouselle {
@@ -61,7 +75,8 @@
 }
 
 .client-logos > img {
-    height: 100px;   
+    height: 100px;
+    width: auto;
 }
 
 @media only screen and (max-width:992px) {
@@ -77,7 +92,7 @@
 /* Subscribe */
 
 .sub-form-div {
-    padding: 0 25px;
+    padding: 0 10px;
 }
 
 .form {
@@ -106,13 +121,19 @@
 
 .form > button {
     display: inline-block;
-    padding: 12px 28px;
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 26px;
     font-size: 17px;
     border-radius: 30px;
-    border: none;
-    background-color: #000;
-    color: white;
     position: absolute;
     top: 25px;
     right: 4px;
+    transition: all 0.5s ease;
+}
+
+.form > button:hover {
+    background-color: #fff;
+    color: #000;
 }
