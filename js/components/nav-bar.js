@@ -2,7 +2,7 @@ const navbar = document.querySelector('.nav-bar');
 const whiteLogo = document.querySelector('.white-logo');
 const blackLogo = document.querySelector('.black-logo');
 const navScroll = window.onscroll = () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 60) {
         navbar.classList.add('nav-active');
         whiteLogo.style.display = "none"
         blackLogo.style.display = "block"
