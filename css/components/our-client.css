@@ -50,11 +50,15 @@
 .separator-asterisk::before,
 .separator-asterisk::after {
     display: inline-block;
-    vertical-align: middle;
     content: '';
     background-color: #c4c2c2;
+    margin-bottom: 10px;
     width: 30px;
-    height: 2px;
+    height: 1px;
+}
+
+.material-icons {
+    font-size: 45px;
 }
 
 .carouselle {
