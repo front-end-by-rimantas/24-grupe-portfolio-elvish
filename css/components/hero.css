@@ -11,6 +11,7 @@
   min-height: 100vh;
   margin-bottom: 100px;
 }
+
 .hero::before {
   content: '';
   position: absolute;
@@ -30,7 +31,7 @@
 }
 
 .welcoming {
-  display: flex;
+  text-align: center;
   margin: 0;
   flex-direction: column;
   align-items: center;
@@ -126,5 +127,22 @@
   100% {
     content: 'A designer.';
     opacity: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .welcoming > h1 {
+    font-size: 60px;
+  }
+  .welcoming > h1 > span {
+    font-size: 60px;
+  }
+  .welcoming > h2 {
+    font-size: 21px;
+  }
+  .hero-link {
+    padding: 10px 21px;
+    border: 2x solid white;
+    font-size: 15px;
   }
 }
