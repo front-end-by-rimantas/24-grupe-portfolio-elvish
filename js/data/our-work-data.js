@@ -26,7 +26,7 @@ const workData = [
 {
     // notepad
     id: 4,
-    category: ["webdesign", "wordpress"],
+    categories: ["webdesign", "wordpress"],
     title: "Studio & Art",
     description: ["UI elements","Icons"],
     img: "../img/work/note-pad.jpg", 
@@ -34,7 +34,7 @@ const workData = [
 {
     // vinyl
     id: 5,
-    category: ["work"],
+    categories: ["work"],
     title: "Open Imagination",
     description: ["media", "icons"],
     img: "../img/work/vinyl.jpg", 
@@ -42,9 +42,9 @@ const workData = [
 {
     // opened book
     id: 6,
-    category: ["Wordpress"],
+    categories: ["Wordpress"],
     title: "Backpack Contents",
-    description: "",
+    description: ["design", 'UI'],
     img: "../img/work/opened-book.jpg", 
 },
 
