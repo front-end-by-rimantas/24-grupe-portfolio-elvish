@@ -15,13 +15,12 @@
         max-width: 690px;
         margin: 0 calc((100% - 690px) / 2);
     }
-
 }
 
 @media (max-width:688px) {
-    .long-row {
-        max-width: 100%;
-        padding: 0px 15px;
+    .long-row{
+        width: 100%;
+        margin: 0;
     }
     .short-row {
         max-width: 510px;

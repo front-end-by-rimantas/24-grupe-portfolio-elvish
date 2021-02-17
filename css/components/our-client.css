@@ -64,13 +64,13 @@
     height: 100px;   
 }
 
-@media only screen and (max-width:688px) {
+@media only screen and (max-width:992px) {
     .client-logos {
         flex-direction: column;
         align-items: center;
     }
     .client-logos > img {
-        margin: 15px calc((100% - 100px) / 2);
+        margin: 10px calc((100% - 100px) / 2);
     }
 }
 
