@@ -13,7 +13,7 @@ const workData = [
     categories: ["seo", "webdesign"],
     title: "Locked steel gate",
     description: ["Graphics", "UI elements"],
-    img: "../img/work/cup.jpg", 
+    img: "../img/work/paper-cup.jpg", 
 },
 {
     // book
