@@ -61,7 +61,20 @@
 }
 
 
+@media (max-width:992px) {
+    .progress-bars{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+}
 
+@media (max-width:570px){
+    .progress-bars {
+        width: 100%;
+    }
+    
+}
 
 
 @keyframes loading{
