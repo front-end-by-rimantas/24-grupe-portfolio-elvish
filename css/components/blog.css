@@ -70,6 +70,8 @@
 
 .box-img {
     position: relative;
+    display: flex;
+    overflow: hidden;
 }
 
  .slider-prv,
@@ -104,4 +106,25 @@
 .slider-nxt:hover,
 .slider-prv:hover {
     color: #fff;
+}
+
+.slide {
+    position: absolute;
+    transform: translateX(0);
+    animation-name: slide;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(340px);
+    }
 }
