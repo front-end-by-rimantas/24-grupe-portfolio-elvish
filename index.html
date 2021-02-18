@@ -13,7 +13,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <!-- https://pictogrammers.github.io/@mdi/font/1.7.22/  list of icons to use -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/Home.css">
 </head>
 
@@ -124,8 +128,64 @@
                 a page when
                 looking at this layout.</p>
         </div>
-        <div class="carouselle">carouselle</div>
+
+        <div class="slider short-row owl-carousel">
+            <div class="card">
+                <div class="testimonial">
+                    <i>Icon</i>
+                    <div class="content">
+                        <h3 class="carousel-names">Kirk McFall</h3>
+                        <p>"The most well-known dummy text is the 'Lorem Ipsum', which is said originated the 16th
+                            century.
+                            This
+                            ancient dummy text is also incomprehensible, of most European in Latin script."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="testimonial">
+                    <i>Icon</i>
+                    <div class="content">
+                        <h3 class="carousel-names">Edward Ewans</h3>
+                        <p>"The most well-known dummy text is the 'Lorem Ipsum', which is said originated the 16th
+                            century.
+                            This
+                            ancient dummy text is also incomprehensible, of most European in Latin script."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="testimonial">
+                    <i>Icon</i>
+                    <div class="content">
+                        <h3 class="carousel-names">Antonio Hernandez</h3>
+                        <p>"The most well-known dummy text is the 'Lorem Ipsum', which is said originated the 16th
+                            century.
+                            This
+                            ancient dummy text is also incomprehensible, of most European in Latin script."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
+
+    <script>
+        $(".slider").owlCarousel({
+            items: 1,
+            loop: true,
+            mouseDrag: true,
+            rewind: false,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            smartSpeed: 1500,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+        })
+    </script>
 
     <!-- Trusted Clients -->
 

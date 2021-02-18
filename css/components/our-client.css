@@ -61,9 +61,34 @@
     font-size: 45px;
 }
 
-.carouselle {
-    display: block;
+.slider {
+    max-width: 580px;
+    display: flex;
+}
+
+.slider .card {
+    padding: 0 10px;
+    width: 100%;
     text-align: center;
+}
+
+.slider i {
+    font-size: 40px;
+}
+
+.content > p {
+    font-size: 18px;
+}
+
+.owl-dots > button {
+    width: 10px;
+    height: 10px;
+    background-color: azure;
+}
+.owl-dots > button span {
+    width: 10px;
+    height: 10px;
+    background-color: azure;
 }
 
 /* Trusted Clients */
