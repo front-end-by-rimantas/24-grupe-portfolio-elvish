@@ -9,6 +9,7 @@
 /* Hero */
 @import './components/hero.css';
 @import './components/arrow-down.css';
+@import './components/particles-style.css';
 /* About */
 @import './components/about-me.css';
 @import './components/progress-bars.css';
