@@ -1,14 +1,16 @@
 let myIndex = 0;
 
 function carousel() {
-  let i;
-  const x = document.getElementsByClassName("carousel-img");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+  const images = document.getElementsByClassName("carousel-img");
+  for (let i = 0; i < images.length; i++) {
+    images[i].classList.remove('slide');
   }
   myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
+  if (myIndex > images.length) {
+    myIndex = 1
+  } 
+    images[myIndex-1].classList.add('slide');
+
   setTimeout(carousel, 5000);
 }
 
