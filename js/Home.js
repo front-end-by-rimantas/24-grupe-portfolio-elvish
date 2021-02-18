@@ -14,9 +14,9 @@ import { rightProgressBar } from './data/progress-bars.js'
 // Trusted Clients
 // Subscribe
 // Blog
+import {carousel} from './components/carousel.js'
 // Contact
 // Footer
-
 // EXECUTION
 // Nav
 import { navScroll } from './components/nav-bar.js'
@@ -34,5 +34,6 @@ new ProgressBar('.right-progress', rightProgressBar)
 // Trusted Clients
 // Subscribe
 // Blog
+carousel();
 // Contact
 // Footer
