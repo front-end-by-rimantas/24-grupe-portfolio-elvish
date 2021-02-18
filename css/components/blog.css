@@ -68,5 +68,39 @@
     color: var(--text-gray);
 }
 
+.box-img {
+    position: relative;
+}
 
- 
+ .slider-prv,
+ .slider-nxt{
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    font-size: 20px;
+    color: #fff8;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.slider-prv span,
+.slider-nxt span {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-nxt {
+    right: 0;
+}
+
+.slider-prv {
+    left: 0;
+}
+
+.slider-nxt:hover,
+.slider-prv:hover {
+    color: #fff;
+}
