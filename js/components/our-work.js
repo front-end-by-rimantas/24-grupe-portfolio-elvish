@@ -4,15 +4,26 @@ let displayContainer = document.querySelector('.display-container');
 const btnContainer = document.querySelector('.btn-container');
 
 
+//capitalizes string
+function toTitleCase(str) {
+  return str.replace(
+    /\w\S*/g,
+    function(txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    }
+  );
+}
+
 
 
 //renders items from data file
 function renderItems(items){
     let display = items.map(function(item){
+
         return `<article style="background-image: url(${item.img});" class="display-item">
         <div class="display-item-text">
-        <h4>${item.title}</h4>
-        <h5>${item.description}</h5>
+        <h4>${toTitleCase(item.title)}</h4>
+        <h5> ${item.description} </h5>
         </div>
         </article>`
         
@@ -38,7 +49,8 @@ function displayMenuButtons(){
         
         //renders btns from categories
         const categoryBtns = categories.map(function(category){
-            return `<button class="filter-btn" type="button" data-id="${category}">${category}</button>`
+            
+            return `<button class="filter-btn" type="button" data-id="${category}">${toTitleCase(category)}</button>`
         }).join('')
         
         btnContainer.innerHTML = categoryBtns;

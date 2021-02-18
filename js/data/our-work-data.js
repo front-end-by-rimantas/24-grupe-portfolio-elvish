@@ -27,7 +27,7 @@ const workData = [
     // notepad
     id: 4,
     categories: ["webdesign", "wordpress"],
-    title: "studio & Art",
+    title: "studio and Art",
     description: ["UI elements","Icons"],
     img: "../img/work/note-pad.jpg", 
 },
@@ -36,7 +36,7 @@ const workData = [
     id: 5,
     categories: ["work"],
     title: "open imagination",
-    description: ["media", "icons"],
+    description: ["Media", "Icons"],
     img: "../img/work/vinyl.jpg", 
 },
 {
@@ -44,7 +44,7 @@ const workData = [
     id: 6,
     categories: ["wordpress"],
     title: "backpack contents",
-    description: ["design", 'UI'],
+    description: ["Design", 'UI'],
     img: "../img/work/opened-book.jpg", 
 },
 {
@@ -52,7 +52,7 @@ const workData = [
     id: 7,
     categories: ["any category"],
     title: "test title",
-    description: ["test desc", 'test desc2'],
+    description: ["Test Desc", 'Test Desc'],
     img: "../img/work/opened-book.jpg", 
 },
 {
@@ -60,7 +60,7 @@ const workData = [
     id: 7,
     categories: ["category888"],
     title: "test title",
-    description: ["test desc", 'test desc2'],
+    description: ["Test Desc", 'Test Desc2'],
     img: "../img/work/opened-book.jpg", 
 },
 
