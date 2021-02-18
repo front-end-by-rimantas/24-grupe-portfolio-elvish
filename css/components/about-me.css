@@ -1,7 +1,7 @@
 @import './variables.css';
 
 .about-me{
-    padding: 80px;
+    /* padding: 80px; */
     width: 100%;
 }
 
@@ -92,5 +92,13 @@ h3{
     .long-text {
         max-width: 510px;
         margin: 0 calc((100% - 510px) / 2);
+    }
+}
+@media (max-width:570px){
+    .long-text{
+        width: 510px;
+        margin-left: calc((100% - 510px) / 2);
+        margin-top: 20px;
+        
     }
 }
