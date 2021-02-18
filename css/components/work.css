@@ -42,5 +42,54 @@
   margin: 10px;
   border-radius: 5px;
   transition: all 2s;
-  
+  cursor: pointer;
+}
+
+/* modal start---------------------- */
+
+.image-view {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  background: rgba(95, 158, 160, 0.42);
+  width: 100%;
+  display: none;
+}
+
+.image-box {
+  width: 70vw;
+  height: 80vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background: tomato; */
+  display: none;
+}
+
+#prev-btn,
+#next-btn {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+#prev-btn {
+  border-right: 40px solid grey;
+  left: -50px;
+}
+
+#next-btn {
+  border-left: 40px solid grey;
+  right: -50px;
+}
+
+#next-btn:hover,
+#prev-btn:hover {
+  opacity: 0.6;
 }

@@ -5,7 +5,7 @@ const workData = [
     categories: ["seo", "webdesign"],
     title: "creative & art",
     description: ["Illustrations"],
-    img: "../img/work/poster-frame.jpg", 
+    img: "../img/work/1.jpg", 
 },
 {
     // cup
@@ -13,7 +13,7 @@ const workData = [
     categories: ["seo", "webdesign"],
     title: "locked steel gate",
     description: ["Graphics", "UI elements"],
-    img: "../img/work/paper-cup.jpg", 
+    img: "../img/work/2.jpg", 
 },
 {
     // book
@@ -21,7 +21,7 @@ const workData = [
     categories: ["seo", "work"],
     title: "mac sunglasses",
     description: ["Illustrations", "Graphics"],
-    img: "../img/work/book.jpg", 
+    img: "../img/work/3.jpg", 
 },
 {
     // notepad
@@ -29,7 +29,7 @@ const workData = [
     categories: ["webdesign", "wordpress"],
     title: "studio and Art",
     description: ["UI elements","Icons"],
-    img: "../img/work/note-pad.jpg", 
+    img: "../img/work/4.jpg", 
 },
 {
     // vinyl
@@ -37,7 +37,7 @@ const workData = [
     categories: ["work"],
     title: "open imagination",
     description: ["Media", "Icons"],
-    img: "../img/work/vinyl.jpg", 
+    img: "../img/work/5.jpg", 
 },
 {
     // opened book
@@ -45,24 +45,9 @@ const workData = [
     categories: ["wordpress"],
     title: "backpack contents",
     description: ["Design", 'UI'],
-    img: "../img/work/opened-book.jpg", 
+    img: "../img/work/6.jpg", 
 },
-{
-    // opened book
-    id: 7,
-    categories: ["any category"],
-    title: "test title",
-    description: ["Test Desc", 'Test Desc'],
-    img: "../img/work/opened-book.jpg", 
-},
-{
-    // opened book
-    id: 7,
-    categories: ["category888"],
-    title: "test title",
-    description: ["Test Desc", 'Test Desc2'],
-    img: "../img/work/opened-book.jpg", 
-},
+
 
 ]
 

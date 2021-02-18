@@ -3,6 +3,12 @@ import {workData} from '../data/our-work-data.js';
 let displayContainer = document.querySelector('.display-container');
 const btnContainer = document.querySelector('.btn-container');
 
+const modalOverlay = document.querySelector('.modal-overlay')
+
+
+
+
+
 
 //capitalizes string
 function toTitleCase(str) {
@@ -20,7 +26,7 @@ function toTitleCase(str) {
 function renderItems(items){
     let display = items.map(function(item){
 
-        return `<article style="background-image: url(${item.img});" class="display-item">
+        return `<article data-item-id='${item.id}' style="background-image: url(${item.img});" class="display-item">
         <div class="display-item-text">
         <h4>${toTitleCase(item.title)}</h4>
         <h5> ${item.description} </h5>
@@ -29,8 +35,92 @@ function renderItems(items){
         
     });
     display = display.join('');
+
     displayContainer.innerHTML = display;
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // modal----------------------------------------------------------
+    const imageView = document.querySelector('.image-view');
+    const displayItems = document.querySelectorAll('.display-item')
+    const imageBox = document.querySelector('.image-box');
+    const nextBtn = document.getElementById('next-btn');
+const prevBtn = document.getElementById('prev-btn');
+const allImages = document.querySelectorAll('.display-item');
+
+
+    let currentImageIdx = 1;
+
+    imageView.addEventListener('click', function(){
+    this.style.display = 'none';
+    imageBox.style.display = 'none';
+    } )
+    
+
+
+    displayItems.forEach(function(item, index){
+        item.addEventListener('click', function(){
+        imageView.style.display = 'block';
+        imageBox.style.display = 'block';
+        currentImageIdx = index + 1;
+        currentImageDisplay(currentImageIdx);
+
+    });
+    });
+
+    function currentImageDisplay(position){
+    imageBox.style.background = `url(../img/work/${currentImageIdx}.jpg) center/cover no-repeat`;
+    };
+
+    prevBtn.addEventListener('click', function(){
+    currentImageIdx--;
+    if(currentImageIdx === 0){
+        currentImageIdx = allImages.length;
+    }
+    currentImageDisplay(currentImageIdx);
+
+})
+
+nextBtn.addEventListener('click', function(){
+    currentImageIdx++;
+    if(currentImageIdx === allImages.length +1 ){
+        currentImageIdx = 1;
+    }
+    currentImageDisplay(currentImageIdx);
+
+})
+
+imageBox.addEventListener('click', function(){
+    currentImageIdx++;
+    if(currentImageIdx === allImages.length +1 ){
+        currentImageIdx = 1;
+    }
+    currentImageDisplay(currentImageIdx);
+
+})
+
+    
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+    
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //dynamycaly renders buttons with UNIQUE category names and filters accordingly
 function displayMenuButtons(){
@@ -56,6 +146,7 @@ function displayMenuButtons(){
         btnContainer.innerHTML = categoryBtns;
         
         const filterBtns = document.querySelectorAll('.filter-btn');
+        
 
         //filters items
         filterBtns.forEach(function(btn) {
@@ -78,6 +169,37 @@ function displayMenuButtons(){
 });
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //function fo export:
 function renderWorkSection(){
     //loads items 
@@ -86,6 +208,8 @@ function renderWorkSection(){
         
         //dynamycaly makes array of UNIQUE categories and renders buttons
         displayMenuButtons();
+
+
 });
 };
 
