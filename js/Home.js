@@ -1,5 +1,6 @@
 // IMPORTS
 // Nav
+import { navScroll } from './components/nav-bar.js'
 // Hero
 // About
 import { ProgressBar } from './components/Progress-bar.js'
@@ -14,14 +15,14 @@ import { rightProgressBar } from './data/progress-bars.js'
 // Trusted Clients
 // Subscribe
 // Blog
+import {carousel} from './components/carousel.js'
 // Contact
 // Footer
-
 // EXECUTION
 // Nav
-import { navScroll } from './components/nav-bar.js'
 navScroll();
 // Hero
+particlesJS.load('particles-js','particles.json', function(){});
 // About
 new ProgressBar('.left-progress', leftProgressBar)
 new ProgressBar('.right-progress', rightProgressBar)
@@ -34,5 +35,6 @@ new ProgressBar('.right-progress', rightProgressBar)
 // Trusted Clients
 // Subscribe
 // Blog
+carousel();
 // Contact
 // Footer
