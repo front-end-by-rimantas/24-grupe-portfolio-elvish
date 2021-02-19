@@ -13,7 +13,7 @@
 }
 
 .contact-box {
-    margin: 25px;
+    margin-bottom: 15px;
 }
 
 .contact-text {
@@ -21,7 +21,7 @@
     color: var(--text-gray);
 }
 
-.contact-box > .icon,
+.contact-box > .fa,
 .contact-box > .contact-title,
 .contact-box > .contact-text {
     margin-bottom: 8px;
@@ -84,4 +84,11 @@
     outline: none;
     padding: 14px 24px;
     cursor: pointer;
+}
+
+.contact-box > .fa {
+    font-size: 40px;
+    text-decoration: none;
+    color: #000;
+    
 }
