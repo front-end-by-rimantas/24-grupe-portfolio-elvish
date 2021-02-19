@@ -44,3 +44,6 @@ const bottomServices = [
 
 
 ]
+
+export { topServices }
+export { bottomServices }

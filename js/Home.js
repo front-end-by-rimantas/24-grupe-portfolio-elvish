@@ -7,6 +7,10 @@ import { ProgressBar } from './components/Progress-bar.js'
 import { leftProgressBar } from './data/progress-bars.js'
 import { rightProgressBar } from './data/progress-bars.js'
 // Services
+import { Services } from './components/Services.js'
+import { topServices } from './data/services.js'
+import { bottomServices } from './data/services.js'
+
 // Statistics
 // Education
 // Available Freelancer
@@ -27,6 +31,8 @@ particlesJS.load('particles-js', 'particles.json', function () { });
 new ProgressBar('.left-progress', leftProgressBar)
 new ProgressBar('.right-progress', rightProgressBar)
 // Services
+new Services('.top-services', topServices)
+console.log('labas');
 // Statistics
 // Education
 // Available Freelancer
