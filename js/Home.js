@@ -15,14 +15,14 @@ import { rightProgressBar } from './data/progress-bars.js'
 // Trusted Clients
 // Subscribe
 // Blog
-import {carousel} from './components/carousel.js'
+import { carousel } from './components/carousel.js'
 // Contact
 // Footer
 // EXECUTION
 // Nav
 navScroll();
 // Hero
-particlesJS.load('particles-js','particles.json', function(){});
+particlesJS.load('particles-js', 'particles.json', function () { });
 // About
 new ProgressBar('.left-progress', leftProgressBar)
 new ProgressBar('.right-progress', rightProgressBar)
@@ -34,6 +34,7 @@ new ProgressBar('.right-progress', rightProgressBar)
 // Client
 // Trusted Clients
 // Subscribe
+new SubForm('.sub-form');
 // Blog
 carousel();
 // Contact

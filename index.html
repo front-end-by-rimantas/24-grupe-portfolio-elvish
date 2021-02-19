@@ -13,6 +13,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <!-- https://pictogrammers.github.io/@mdi/font/1.7.22/  list of icons to use -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/Home.css">
 </head>
 
@@ -45,7 +50,7 @@
             space for social icons
         </div>
         <a class="hero-link hero-row" href="#">Download <span>cv</span></a>
-        
+
         <a class="arrow-down" href="#"></a>
         <div id="particles-js"></div>
     </section>
@@ -118,7 +123,7 @@
         <div class="short-row">
             <h2 class="heading-2 white-text">Our <span>Client</span></h2>
             <div class="separator-asterisk">
-                *
+                <span class="material-icons">*</span>
             </div>
             <p class="subtext white-text">It is a long established fact that a reader will be distracted by the
                 readable
@@ -126,15 +131,73 @@
                 a page when
                 looking at this layout.</p>
         </div>
-        <div class="carouselle">carouselle</div>
+
+        <div class="slider short-row owl-carousel">
+            <div class="card">
+                <div class="testimonial">
+                    <i class="fa fa-user"></i>
+                    <div class="content">
+                        <h3 class="carousel-names">Kirk McFall</h3>
+                        <p>"The most well-known dummy text is the 'Lorem Ipsum', which is said originated the 16th
+                            century.
+                            This
+                            ancient dummy text is also incomprehensible, of most European in Latin script."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="testimonial">
+                    <i class="fa fa-user"></i>
+                    <div class="content">
+                        <h3 class="carousel-names">Edward Ewans</h3>
+                        <p>"The most well-known dummy text is the 'Lorem Ipsum', which is said originated the 16th
+                            century.
+                            This
+                            ancient dummy text is also incomprehensible, of most European in Latin script."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="testimonial">
+                    <i class="fa fa-user"></i>
+                    <div class="content">
+                        <h3 class="carousel-names">Antonio Hernandez</h3>
+                        <p>"The most well-known dummy text is the 'Lorem Ipsum', which is said originated the 16th
+                            century.
+                            This
+                            ancient dummy text is also incomprehensible, of most European in Latin script."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
+
+    <script>
+        $(".slider").owlCarousel({
+            items: 1,
+            loop: true,
+            mouseDrag: true,
+            rewind: false,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            smartSpeed: 1500,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+        })
+    </script>
 
     <!-- Trusted Clients -->
 
     <section class="section section-gray-bg">
         <div class="short-row">
             <h2 class="heading-2">Trusted by <span>Great People</span></h2>
-            <div class="separator-asterisk">*</div>
+            <div class="separator-asterisk">
+                <span class="material-icons">*</span>
+            </div>
             <p class="subtext">It is a long established fact that a reader will be distracted by the readable content of
                 a page when
                 looking at this layout.</p>
@@ -157,7 +220,9 @@
     <section class="section section-subscribe">
         <div class="short-row">
             <h2 class="heading-2"><span>Subscribe</span> to Newsletter</h2>
-            <div class="separator-asterisk">*</div>
+            <div class="separator-asterisk">
+                <span class="material-icons">*</span>
+            </div>
             <p class="subtext">It is a long established fact that a reader will be distracted by the readable
                 content of a page when
                 looking at this layout.</p>
@@ -166,7 +231,7 @@
             <form class="sub-form">
                 <label for="sub-email">Email</label>
                 <input id="sub-email" type="email" placeholder="Email">
-                <button>Subscribe</button>
+                <button class="sub-form-btn">Subscribe</button>
             </form>
         </div>
     </section>
@@ -289,7 +354,7 @@
     <script src="./js/Home.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="particles.js"></script>
-   
+
 
 </body>
 
