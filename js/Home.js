@@ -1,5 +1,6 @@
 // IMPORTS
 // Nav
+import { navScroll } from './components/nav-bar.js'
 // Hero
 // About
 import { ProgressBar } from './components/Progress-bar.js'
@@ -19,9 +20,9 @@ import {carousel} from './components/carousel.js'
 // Footer
 // EXECUTION
 // Nav
-import { navScroll } from './components/nav-bar.js'
 navScroll();
 // Hero
+particlesJS.load('particles-js','particles.json', function(){});
 // About
 new ProgressBar('.left-progress', leftProgressBar)
 new ProgressBar('.right-progress', rightProgressBar)
