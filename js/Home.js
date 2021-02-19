@@ -33,7 +33,8 @@ new ProgressBar('.left-progress', leftProgressBar)
 new ProgressBar('.right-progress', rightProgressBar)
 // Services
 new Services('.top-services', topServices)
-console.log('labas');
+new Services('.bottom-services', bottomServices)
+
 // Statistics
 // Education
 // Available Freelancer
