@@ -2,6 +2,7 @@
 @import './components/layout.css';
 @import './components/variables.css';
 
+@import './components/all.min.css';
 /* CUSTOM HOME PAGE CSS */
 
 /* Nav */
@@ -14,6 +15,7 @@
 @import './components/about-me.css';
 @import './components/progress-bars.css';
 /* Services */
+@import './components/services.css';
 /* Statistics */
 /* Education */
 /* Available Freelancer */
