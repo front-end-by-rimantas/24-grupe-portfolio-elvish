@@ -108,7 +108,8 @@
     color: #fff;
 }
 
-.slide {
+.slide,
+.slide-back {
     position: absolute;
     transform: translateX(0);
     animation-name: slide;
@@ -116,6 +117,21 @@
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
+}
+
+.slide-back {
+    animation-name: slide-back;
+}
+
+@keyframes slide-back {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-340px);
+    }
 }
 
 @keyframes slide {

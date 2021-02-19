@@ -6,8 +6,8 @@ class SubForm {
 
     subscribe() {
 
-        const entry = form.querySelectorAll('#sub-email');
-        const subButton = form.querySelector('.sub-form-btn');          // create button variable
+        const entry = document.querySelectorAll('#sub-email');
+        const subButton = document.querySelector('.sub-form-btn');          // create button variable
 
         subButton.addEventListener('click', (event) => {          // create event for button
             event.preventDefault();

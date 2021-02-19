@@ -18,6 +18,7 @@ import { bottomServices } from './data/services.js'
 // Client
 // Trusted Clients
 // Subscribe
+import { SubForm } from './components/subscribe-form.js'
 // Blog
 import { carousel } from './components/carousel.js'
 // Contact
