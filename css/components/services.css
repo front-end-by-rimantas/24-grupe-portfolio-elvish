@@ -35,10 +35,23 @@
 }
 
 .service-heading{
-
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 8px;
 }
 
 .service-text{
-
+    color: #6c757d;
+    margin-top: 16px;
 }
 
+@media(max-width: 990px){
+    .service-row{
+        flex-direction: column;
+    }
+
+    .service-col{
+        width: 100%;
+        padding: 24px;
+    }
+}
