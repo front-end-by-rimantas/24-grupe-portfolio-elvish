@@ -14,6 +14,7 @@ import { rightProgressBar } from './data/progress-bars.js'
 // Client
 // Trusted Clients
 // Subscribe
+import { forms } from './components/subscribe-form.js';
 // Blog
 import { carousel } from './components/carousel.js'
 // Contact
@@ -33,8 +34,8 @@ new ProgressBar('.right-progress', rightProgressBar)
 // Work
 // Client
 // Trusted Clients
-// Subscribe
-new SubForm('.sub-form');
+// // Subscribe
+forms();
 // Blog
 carousel();
 // Contact
