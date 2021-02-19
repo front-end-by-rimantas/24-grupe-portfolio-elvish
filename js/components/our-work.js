@@ -1,16 +1,12 @@
 import {workData} from '../data/our-work-data.js';
-//dabar
+
 let displayContainer = document.querySelector('.display-container');
 const btnContainer = document.querySelector('.btn-container');
 
 const modalOverlay = document.querySelector('.modal-overlay')
 
 
-
-
-
-
-//capitalizes string
+//general func for string capitalization
 function toTitleCase(str) {
   return str.replace(
     /\w\S*/g,
@@ -19,7 +15,6 @@ function toTitleCase(str) {
     }
   );
 }
-
 
 
 //renders items from data file
@@ -37,14 +32,20 @@ function renderItems(items){
     display = display.join('');
 
     displayContainer.innerHTML = display;
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // modal----------------------------------------------------------
+
+    
+
+
+    
+
+//modal slider--------------------------------
+
     const imageView = document.querySelector('.image-view');
-    const displayItems = document.querySelectorAll('.display-item')
+    // const displayItems = document.querySelectorAll('.display-item')
     const imageBox = document.querySelector('.image-box');
     const nextBtn = document.getElementById('next-btn');
-const prevBtn = document.getElementById('prev-btn');
-const allImages = document.querySelectorAll('.display-item');
+    const prevBtn = document.getElementById('prev-btn');
+    const allImages = document.querySelectorAll('.display-item');
 
 
     let currentImageIdx = 1;
@@ -56,13 +57,14 @@ const allImages = document.querySelectorAll('.display-item');
     
 
 
-    displayItems.forEach(function(item, index){
+    allImages.forEach(function(item, index){
         item.addEventListener('click', function(){
         imageView.style.display = 'block';
         imageBox.style.display = 'block';
         currentImageIdx = index + 1;
         currentImageDisplay(currentImageIdx);
 
+    
     });
     });
 
@@ -70,57 +72,50 @@ const allImages = document.querySelectorAll('.display-item');
     imageBox.style.background = `url(../img/work/${currentImageIdx}.jpg) center/cover no-repeat`;
     };
 
-    prevBtn.addEventListener('click', function(){
+
+
+    
+    
+    
+    prevBtn.addEventListener('click', function(e){
+        
     currentImageIdx--;
+    console.log('veikia')
     if(currentImageIdx === 0){
         currentImageIdx = allImages.length;
     }
     currentImageDisplay(currentImageIdx);
+    e.stopPropagation()
 
 })
-
-nextBtn.addEventListener('click', function(){
-    currentImageIdx++;
-    if(currentImageIdx === allImages.length +1 ){
-        currentImageIdx = 1;
-    }
-    currentImageDisplay(currentImageIdx);
-
-})
-
-imageBox.addEventListener('click', function(){
-    currentImageIdx++;
-    if(currentImageIdx === allImages.length +1 ){
-        currentImageIdx = 1;
-    }
-    currentImageDisplay(currentImageIdx);
-
-})
-
     
+    nextBtn.addEventListener('click', function(e){
+        currentImageIdx++;
+        if(currentImageIdx === allImages.length +1 ){
+            currentImageIdx = 1;
+        }
+        currentImageDisplay(currentImageIdx);
+        // e.stopPropagation()
+    })
+
+    imageBox.addEventListener('click', function(e){
+        currentImageIdx++;
+        if(currentImageIdx === allImages.length +1 ){
+            currentImageIdx = 1;
+        }
+        currentImageDisplay(currentImageIdx);
+        // e.stopPropagation()
+    })
 
 
 
 
+  
 
 
+}  //end of renderItems function
 
-
-
-
-}
-
-
-
-
-
-
-
-
-    
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////
 
 //dynamycaly renders buttons with UNIQUE category names and filters accordingly
 function displayMenuButtons(){
@@ -156,7 +151,9 @@ function displayMenuButtons(){
             //loops through categories
             for (let i of item.categories)
             if (i === category){
+                console.log(item)
                 return item;
+                
             }
         });
         if (category === 'all') {//if selected all, then renders all.
@@ -168,30 +165,6 @@ function displayMenuButtons(){
     });
 });
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

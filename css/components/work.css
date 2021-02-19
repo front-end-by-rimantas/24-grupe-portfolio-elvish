@@ -51,9 +51,10 @@
   position: fixed;
   top: 0;
   height: 100vh;
-  background: rgba(95, 158, 160, 0.42);
+  background: rgba(24, 24, 24, 0.674);
   width: 100%;
   display: none;
+  z-index: 50;
 }
 
 .image-box {
@@ -65,6 +66,7 @@
   transform: translate(-50%, -50%);
   /* background: tomato; */
   display: none;
+  z-index: 100;
 }
 
 #prev-btn,
