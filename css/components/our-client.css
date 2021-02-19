@@ -7,11 +7,13 @@
     font-size: 32px;
     margin-bottom: 8px;
     color: #212529;
+    text-transform: capitalize;
 }
 
 .heading-2 > span {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 .subtext {
