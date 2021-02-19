@@ -14,6 +14,7 @@ import { rightProgressBar } from './data/progress-bars.js'
 // Client
 // Trusted Clients
 // Subscribe
+import { SubForm } from './components/subscribe-form.js'
 // Blog
 import { carousel } from './components/carousel.js'
 // Contact
