@@ -46,15 +46,26 @@ function renderItems(items){
     const nextBtn = document.getElementById('next-btn');
     const prevBtn = document.getElementById('prev-btn');
     const allImages = document.querySelectorAll('.display-item');
+    const closeBtn = document.getElementById('close-btn');
+    const imgProgress = document.getElementById('img-progress')
 
 
     let currentImageIdx = 1;
 
+    //closes modal when clicked outside picture;
     imageView.addEventListener('click', function(){
     this.style.display = 'none';
     imageBox.style.display = 'none';
-    } )
-    
+    });
+
+
+//closes modal when clicked x btn
+    closeBtn.addEventListener('click', function(){
+    imageView.style.display = 'none'
+    imageBox.style.display = 'none';
+    });
+
+
 
 
     allImages.forEach(function(item, index){
@@ -63,14 +74,16 @@ function renderItems(items){
         imageBox.style.display = 'block';
         currentImageIdx = index + 1;
         currentImageDisplay(currentImageIdx);
-
-    
     });
     });
 
     function currentImageDisplay(position){
     imageBox.style.background = `url(../img/work/${currentImageIdx}.jpg) center/cover no-repeat`;
+    imgProgress.innerHTML = `<p>${currentImageIdx}/${allImages.length} </p>`
+
     };
+
+    
 
 
 
@@ -80,7 +93,7 @@ function renderItems(items){
     prevBtn.addEventListener('click', function(e){
         
     currentImageIdx--;
-    console.log('veikia')
+    
     if(currentImageIdx === 0){
         currentImageIdx = allImages.length;
     }
@@ -95,7 +108,7 @@ function renderItems(items){
             currentImageIdx = 1;
         }
         currentImageDisplay(currentImageIdx);
-        // e.stopPropagation()
+        e.stopPropagation()
     })
 
     imageBox.addEventListener('click', function(e){
@@ -104,8 +117,10 @@ function renderItems(items){
             currentImageIdx = 1;
         }
         currentImageDisplay(currentImageIdx);
-        // e.stopPropagation()
+        e.stopPropagation()
     })
+
+    
 
 
 

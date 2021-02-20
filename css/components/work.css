@@ -45,7 +45,7 @@
   cursor: pointer;
 }
 
-/* modal start---------------------- */
+/* modal image slider --------------------- */
 
 .image-view {
   position: fixed;
@@ -58,8 +58,8 @@
 }
 
 .image-box {
-  width: 70vw;
-  height: 80vh;
+  width: 40vw;
+  height: 60vh;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -83,15 +83,33 @@
 }
 #prev-btn {
   border-right: 40px solid grey;
-  left: -50px;
+  left: -200px;
 }
 
 #next-btn {
   border-left: 40px solid grey;
-  right: -50px;
+  right: -200px;
 }
 
 #next-btn:hover,
 #prev-btn:hover {
   opacity: 0.6;
+}
+
+#close-btn {
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+  position: fixed;
+  right: 0;
+  top: -20px;
+}
+
+#img-progress {
+  width: 40px;
+  height: 20px;
+  background-color: tomato;
+  position: fixed;
+  right: 0;
+  bottom: -20px;
 }
