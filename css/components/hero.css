@@ -61,9 +61,13 @@
   animation-iteration-count: infinite;
 }
 .hero-socials {
-  background-color: rgba(245, 245, 220, 0.199);
   padding: 10px;
   margin: 25px;
+}
+.hero-socials > a {
+  padding: 0 15px;
+  text-decoration: none;
+  color: white;
 }
 .hero-link {
   text-decoration: none;
