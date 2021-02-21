@@ -19,7 +19,7 @@
   display: flex;
 }
 .nav-link {
-  display: flex;
+  display: inline-block;
   flex-direction: row;
   text-decoration: none;
   position: relative;
@@ -30,6 +30,16 @@
   color: white;
   font-family: Nunito;
   cursor: pointer;
+}
+.nav-link:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  background: white;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  left: calc(50% - 5px);
 }
 
 .white-logo {
@@ -50,6 +60,16 @@
 }
 .nav-active > .container > .nav > .nav-link {
   color: black;
+}
+.nav-active > .container > .nav > .nav-link:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  background: black;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  left: calc(50% - 5px);
 }
 
 @media (max-width: 990px) {

@@ -11,6 +11,19 @@ ul {
   color: white;
   animation: drop 2s;
 }
+.drop-nav-link:hover {
+  border-bottom: 1px solid white;
+}
+.drop-nav-link:hover::before {
+  content: '';
+  position: absolute;
+  background: black;
+  width: 5px;
+  height: 5px;
+  margin-left: -10px;
+  margin-top: 8px;
+  border-radius: 100%;
+}
 @keyframes drop {
   0% {
     opacity: 0;

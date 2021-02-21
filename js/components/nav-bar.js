@@ -2,6 +2,8 @@ const navbar = document.querySelector('.nav-bar');
 const whiteLogo = document.querySelector('.white-logo');
 const blackLogo = document.querySelector('.black-logo');
 let dropList = document.getElementsByClassName('drop-nav-link')
+let dots = document.querySelectorAll('.drop-nav-link:hover::before')
+console.log(dots);
 const hamWhite = document.querySelector('.ham');
 const hamWhiteOne = document.querySelector('.hamOne');
 const hamWhiteTwo = document.querySelector('.hamTwo');
@@ -11,7 +13,6 @@ const navScroll = window.onscroll = () => {
         hamWhite.classList.add('ham-active')
         hamWhiteOne.classList.add('ham-active')
         hamWhiteTwo.classList.add('ham-active')
-        // dropList.classList.add('drop-active')
         whiteLogo.style.display = "none"
         blackLogo.style.display = "block"
         for(let i=0; i<dropList.length; i++) {
