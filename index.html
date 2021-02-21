@@ -13,6 +13,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <!-- https://pictogrammers.github.io/@mdi/font/1.7.22/  list of icons to use -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/Home.css">
 </head>
 
@@ -50,6 +55,7 @@
         </ul>
     </header>
     <!-- Hero -->
+
     <section class="hero bottom-line">
         <div class="welcoming long-row hero-row">
             <h2>Hello &amp; welcome</h2>
@@ -59,50 +65,53 @@
             space for social icons
         </div>
         <a class="hero-link hero-row" href="#">Download <span>cv</span></a>
-        
+
         <a class="arrow-down" href="#"></a>
+        <div id="particles-js"></div>
     </section>
+
     <!-- About -->
 
     <section class="about-me">
-        <div class="long-row">
-            <div class="short-row about">
-                <h2><span class="highlight">About</span> me</h2>
-                <div class="asterisk">
-                    *
-                </div>
-                <p class="text">
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when
-                    looking at its layout.
-                </p>
-                <img src="./img/About/elvish-handwrite-logo.png" alt="Elvish handwhrite logo">
-                <h3>Hello! <span class="highlight">I'm Elvish Walters.</span></h3>
-                <div class="text skills">
-                    <div class="skill">UI/UX Designer</div>
-                    <div class="skill">Photographer</div>
-                    <div class="skill">Developer</div>
-                </div>
 
-            </div>
-            <div class="long-text">
-                <p class="text">
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when
-                    looking at its layout. The point of using lorem ipsum is that it has a more-or-less normal
-                    distribution of letters, as opposed to using 'Content here, content here', making it look like
-                    readable English
-                </p>
-            </div>
-            <div class="progress-bars">
-                <div class="left-progress">
 
+        <div class="short-row about">
+            <div class="short-row">
+                <h2 class="heading-2"><span>About</span> me </h2>
+                <div class="separator-asterisk">
+                    <span class="material-icons">*</span>
                 </div>
-                <div class="right-progress">
-
-                </div>
+                <p class="subtext">It is a long established fact that a reader will be distracted by the readable
+                    content of a page when
+                    looking at this layout.</p>
             </div>
 
+            <img src="./img/About/elvish-handwrite-logo.png" alt="Elvish handwhrite logo">
+            <h3>Hello! <span class="highlight">I'm Elvish Walters.</span></h3>
+            <div class="subtext skills">
+                <div class="skill">UI/UX Designer</div>
+                <div class="skill">Photographer</div>
+                <div class="skill">Developer</div>
+            </div>
+
+        </div>
+        <div class="long-text">
+            <p class="subtext">
+                It is a long established fact that a reader will be distracted by the readable content of a page
+                when
+                looking at its layout. The point of using lorem ipsum is that it has a more-or-less normal
+                distribution of letters, as opposed to using 'Content here, content here', making it look like
+                readable English
+            </p>
+        </div>
+
+        <div class="progress-bars">
+            <div class="left-progress">
+
+            </div>
+            <div class="right-progress">
+
+            </div>
 
         </div>
 
@@ -112,6 +121,24 @@
 
 
     <!-- Services -->
+    <section class="services">
+        <div class="short-row">
+            <h2 class="heading-2">Our <span>Services</span> </h2>
+            <div class="separator-asterisk">
+                <span class="material-icons">*</span>
+            </div>
+            <p class="subtext">It is a long established fact that a reader will be distracted by the readable
+                content of a page when
+                looking at this layout.</p>
+        </div>
+
+        <div class="service-list">
+            <div class="long-row service-row top-services"></div>
+            <div class="long-row service-row bottom-services"></div>
+        </div>
+
+    </section>
+
     <!-- Statistics -->
     <!-- Education -->
     <!-- Available Freelancer -->
@@ -130,7 +157,7 @@
         <div class="short-row">
             <h2 class="heading-2 white-text">Our <span>Client</span></h2>
             <div class="separator-asterisk">
-                *
+                <span class="material-icons">*</span>
             </div>
             <p class="subtext white-text">It is a long established fact that a reader will be distracted by the
                 readable
@@ -138,15 +165,73 @@
                 a page when
                 looking at this layout.</p>
         </div>
-        <div class="carouselle">carouselle</div>
+
+        <div class="slider short-row owl-carousel">
+            <div class="card">
+                <div class="testimonial">
+                    <i class="fa fa-user"></i>
+                    <div class="content">
+                        <h3 class="carousel-names">Kirk McFall</h3>
+                        <p>"The most well-known dummy text is the 'Lorem Ipsum', which is said originated the 16th
+                            century.
+                            This
+                            ancient dummy text is also incomprehensible, of most European in Latin script."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="testimonial">
+                    <i class="fa fa-user"></i>
+                    <div class="content">
+                        <h3 class="carousel-names">Edward Ewans</h3>
+                        <p>"The most well-known dummy text is the 'Lorem Ipsum', which is said originated the 16th
+                            century.
+                            This
+                            ancient dummy text is also incomprehensible, of most European in Latin script."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="testimonial">
+                    <i class="fa fa-user"></i>
+                    <div class="content">
+                        <h3 class="carousel-names">Antonio Hernandez</h3>
+                        <p>"The most well-known dummy text is the 'Lorem Ipsum', which is said originated the 16th
+                            century.
+                            This
+                            ancient dummy text is also incomprehensible, of most European in Latin script."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
+
+    <script>
+        $(".slider").owlCarousel({
+            items: 1,
+            loop: true,
+            mouseDrag: true,
+            rewind: false,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            smartSpeed: 1500,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+        })
+    </script>
 
     <!-- Trusted Clients -->
 
     <section class="section section-gray-bg">
         <div class="short-row">
             <h2 class="heading-2">Trusted by <span>Great People</span></h2>
-            <div class="separator-asterisk">*</div>
+            <div class="separator-asterisk">
+                <span class="material-icons">*</span>
+            </div>
             <p class="subtext">It is a long established fact that a reader will be distracted by the readable content of
                 a page when
                 looking at this layout.</p>
@@ -169,7 +254,9 @@
     <section class="section section-subscribe">
         <div class="short-row">
             <h2 class="heading-2"><span>Subscribe</span> to Newsletter</h2>
-            <div class="separator-asterisk">*</div>
+            <div class="separator-asterisk">
+                <span class="material-icons">*</span>
+            </div>
             <p class="subtext">It is a long established fact that a reader will be distracted by the readable
                 content of a page when
                 looking at this layout.</p>
@@ -178,7 +265,7 @@
             <form class="sub-form">
                 <label for="sub-email">Email</label>
                 <input id="sub-email" type="email" placeholder="Email">
-                <button>Subscribe</button>
+                <button class="sub-form-btn">Subscribe</button>
             </form>
         </div>
     </section>
@@ -187,12 +274,12 @@
     <section class="blog">
         <div class="short-row">
             <div class="section-title">
-                <h2>
-                    Our
-                    <span>blog</span>
-                </h2>
-                <div>star here</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta ad amet dolorum eligendi
+                <h2 class="heading-2">Our <span>blog</span></h2>
+                <div class="separator-asterisk">
+                    <span class="material-icons">*</span>
+                </div>
+                <p class="subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta ad amet dolorum
+                    eligendi
                     temporibus ipsa voluptatum recusandae vitae illum.</p>
             </div>
         </div>
@@ -203,7 +290,7 @@
                         <img src="./img/Blog/blog-1.jpg" alt="blog image">
                     </div>
                     <div class="box-text">
-                        <h5 class="box-title"><a href="#">There are many variations</a></h5>
+                        <h3 class="box-title"><a href="#">There are many variations</a></h3>
                         <p class="box-category"><a href="#">Lifestyle</a></p>
                         <p class="box-date">13 February 2018 <a href="#">By Envato</a></p>
                         <p class="box-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nobis
@@ -214,9 +301,10 @@
                 <div class="box">
                     <div class="box-img">
                         <img src="./img/Blog/blog-2.jpg" alt="blog image">
+                        <a class="blog-video" href="#"><i class="fas fa-play"></i></a>
                     </div>
                     <div class="box-text">
-                        <h5 class="box-title"><a href="#">Contrary to popular belief</a></h5>
+                        <h3 class="box-title"><a href="#">Contrary to popular belief</a></h3>
                         <p class="box-category"><a href="#">Travel</a></p>
                         <p class="box-date">13 February 2018 <a href="#">By Envato</a></p>
                         <p class="box-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nobis
@@ -226,10 +314,13 @@
                 </div>
                 <div class="box">
                     <div class="box-img">
-                        <img src="./img/Blog/blog-3.jpg" alt="blog image">
+                        <img class="carousel-img" src="./img/Blog/blog-3.jpg" alt="blog image">
+                        <img class="carousel-img" src="./img/Blog/blog-4.jpg" alt="blog image">
+                        <a class="slider-prv"><span>&#10094;</span></a>
+                        <a class="slider-nxt"><span>&#10095;</span></a>
                     </div>
                     <div class="box-text">
-                        <h5 class="box-title"><a href="#">Lorem Ipsum is not simply</a></h5>
+                        <h3 class="box-title"><a href="#">Lorem Ipsum is not simply</a></h3>
                         <p class="box-category"><a href="#">Food &amp; Drinks</a></p>
                         <p class="box-date">13 February 2018 <a href="#">By Envato</a></p>
                         <p class="box-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nobis
@@ -245,12 +336,12 @@
     <section class="contact">
         <div class="short-row">
             <div class="section-title">
-                <h2>
-                    Get in
-                    <span>Touch</span>
-                </h2>
-                <div>star here</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta ad amet dolorum eligendi
+                <h2 class="heading-2">Get in <span>touch</span></h2>
+                <div class="separator-asterisk">
+                    <span class="material-icons">*</span>
+                </div>
+                <p class="subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta ad amet dolorum
+                    eligendi
                     temporibus ipsa voluptatum recusandae vitae illum.</p>
             </div>
         </div>
@@ -258,17 +349,17 @@
             <div class="contacts">
                 <div class="contact-boxes">
                     <div class="contact-box">
-                        <div class="icon">ICON</div>
+                        <a class="fa fa-phone-square-alt" href="tel:+000 123 4567"></a>
                         <p class="contact-title">Call us on</p>
                         <a href="tel:+000 123 4567" class="contact-text">+000 123 4567</a>
                     </div>
                     <div class="contact-box">
-                        <div class="icon">ICON</div>
+                        <a class="fa fa-envelope" href="mailto:info@company.com"></a>
                         <p class="contact-title">Email us at</p>
                         <a href="mailto:info@company.com" class="contact-text">info@company.com</a>
                     </div>
                     <div class="contact-box">
-                        <div class="icon">ICON</div>
+                        <div class="fa fa-map-marker-alt"></div>
                         <p class="contact-title">Visit office</p>
                         <p class="contact-text">00, Your street name, City.</p>
                     </div>
@@ -294,8 +385,30 @@
         </div>
     </section>
     <!-- Footer -->
+        <footer class="footer">
+            <div class="long-row">
+                <div class="footer-inner">
+                     <div class="copyrights">
+                        2021 &copy; Elvish. Made by BIT students. Group No. 24
+                    </div>
+                    <div class="socials">
+                        <a href="#" target="_black" class="fab fa-facebook-f" rel="noreferrer"></a>
+                        <a href="#" target="_black" class="fab fa-twitter" rel="noreferrer"></a>
+                        <a href="#" target="_black" class="fab fa-linkedin-in" rel="noreferrer"></a>
+                        <a href="#" target="_black" class="fab fa-google-plus-g" rel="noreferrer"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="back-to-top">
+                <a class="top-link" href="#">&#10094;</a>
+            </div>
+        </footer>
+
 
     <script src="./js/Home.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
 </body>
 
 </html>

@@ -21,6 +21,7 @@
   transform: rotate(-90deg);
   margin-top: 15px;
   color: white;
+  text-decoration: none;
 }
 
 @keyframes arrowAnimation {

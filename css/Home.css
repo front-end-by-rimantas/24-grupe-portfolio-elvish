@@ -2,6 +2,7 @@
 @import './components/layout.css';
 @import './components/variables.css';
 
+@import './components/all.min.css';
 /* CUSTOM HOME PAGE CSS */
 
 /* Nav */
@@ -10,10 +11,12 @@
 /* Hero */
 @import './components/hero.css';
 @import './components/arrow-down.css';
+@import './components/particles-style.css';
 /* About */
 @import './components/about-me.css';
 @import './components/progress-bars.css';
 /* Services */
+@import './components/services.css';
 /* Statistics */
 /* Education */
 /* Available Freelancer */
@@ -28,3 +31,4 @@
 /* Contact */
 @import './components/contact.css';
 /* Footer */
+@import './components/footer.css';
