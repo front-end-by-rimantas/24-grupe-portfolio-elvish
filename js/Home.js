@@ -1,6 +1,7 @@
 // IMPORTS
 // Nav
 import { navScroll } from './components/nav-bar.js'
+import {ham} from './components/hamburger.js'
 // Hero
 // About
 import { ProgressBar } from './components/Progress-bar.js'
@@ -26,6 +27,7 @@ import { contactValidation } from './components/contactValidation.js'
 // Footer
 // EXECUTION
 // Nav
+ham();
 navScroll();
 // Hero
 particlesJS.load('particles-js', 'particles.json', function () { });
@@ -40,6 +42,11 @@ new Services('.bottom-services', bottomServices)
 // Education
 // Available Freelancer
 // Work
+import {renderWorkSection} from "./components/our-work.js"
+
+
+renderWorkSection();
+
 // Client
 // Trusted Clients
 // Subscribe

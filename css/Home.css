@@ -7,6 +7,7 @@
 
 /* Nav */
 @import './components/nav-bar.css';
+@import './components/hamburger.css';
 /* Hero */
 @import './components/hero.css';
 @import './components/arrow-down.css';
@@ -21,6 +22,7 @@
 /* Available Freelancer */
 @import './components/freelancer.css';
 /* Work */
+@import './components/work.css';
 /* Client */
 @import './components/our-client.css';
 /* Trusted Clients */
