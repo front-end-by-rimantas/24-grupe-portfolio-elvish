@@ -2,7 +2,6 @@ const navbar = document.querySelector('.nav-bar');
 const whiteLogo = document.querySelector('.white-logo');
 const blackLogo = document.querySelector('.black-logo');
 let dropList = document.getElementsByClassName('drop-nav-link')
-let dots = document.querySelectorAll('.drop-nav-link:hover::before')
 const hamWhite = document.querySelector('.ham');
 const hamWhiteOne = document.querySelector('.hamOne');
 const hamWhiteTwo = document.querySelector('.hamTwo');
