@@ -102,9 +102,14 @@
 
 
 @media (max-width: 770px) {
+    .contact {
+        padding: 40px 0;
+    }
+
     .contacts {
         flex-direction: column;
     }
+
     .contact-boxes {
         display: flex;
         justify-content: space-between;

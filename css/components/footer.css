@@ -32,6 +32,8 @@
 
 .socials > .fab:hover {
     transform: rotate(360deg);
+    color: #000;
+    border-color: #000;
 }
 
 .top-link {
