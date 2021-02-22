@@ -1,0 +1,79 @@
+.education-container {
+  padding: 70px 0 70px 0;
+}
+
+.education-container .long-row {
+  /* display: inline-block; */
+  /* flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; */
+}
+
+.right-column {
+  display: inline-block;
+  float: right;
+  width: 45%;
+  margin: 20px 0 10px 30px;
+  border-left: solid 1px lightgray;
+}
+.left-column {
+  display: inline-block;
+  float: left;
+  width: 45%;
+  margin: 20px 0 10px 30px;
+  border-left: solid 1px lightgray;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.left-column .education-item {
+  width: 100%;
+  padding: 30px;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  margin: 20px;
+}
+.right-column .education-item {
+  width: 100%;
+  padding: 30px;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  margin: 20px 0 20px 20px;
+}
+
+.dot-parent {
+  position: relative;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: -60px;
+  top: 3px;
+}
+
+@media (max-width: 990px) {
+  .education-container > .long-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .long-row .right-column {
+    width: 90%;
+  }
+  .long-row .left-column {
+    width: 90%;
+  }
+
+  .left-column .education-item,
+  .right-column .education-item {
+    width: 80%;
+    min-width: 250px;
+  }
+}
