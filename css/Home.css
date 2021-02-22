@@ -30,5 +30,6 @@
 @import './components/blog.css';
 /* Contact */
 @import './components/contact.css';
+@import './components/snackbar.css';
 /* Footer */
 @import './components/footer.css';

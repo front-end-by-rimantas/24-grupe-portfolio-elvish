@@ -23,6 +23,7 @@ import { SubForm } from './components/subscribe-form.js'
 // Blog
 import { carousel } from './components/carousel.js'
 // Contact
+import { contactValidation } from './components/contactValidation.js'
 // Footer
 // EXECUTION
 // Nav
@@ -48,4 +49,5 @@ new SubForm('.sub-form');
 // Blog
 carousel();
 // Contact
+contactValidation('.form')
 // Footer
