@@ -28,36 +28,55 @@
             <img class="black-logo" src="./img/Nav/logo-dark.png" alt="black-logo">
             <img class="white-logo" src="./img/Nav/logo-white.png" alt="white-logo">
             <nav class="nav">
-                <a class="nav-link" href="#">Home</a>
-                <a class="nav-link" href="#">About</a>
-                <a class="nav-link" href="#">Services</a>
-                <a class="nav-link" href="#">Education</a>
-                <a class="nav-link" href="#">Work</a>
-                <a class="nav-link" href="#">Client</a>
-                <a class="nav-link" href="#">Blog</a>
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="#education">Education</a>
+                <a class="nav-link" href="#work">Work</a>
+                <a class="nav-link" href="#client">Client</a>
+                <a class="nav-link" href="#blog">Blog</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </nav>
+            <div class="click-on-menu hamburger">
+                <div class="ham" ></div>
+                <div class="hamOne" ></div>
+                <div class="hamTwo" ></div>
+            </div>
         </div>
+        <ul class="drop-down-links long-row">
+           <li> <a class="drop-nav-link" href="#home">Home</a></li>
+           <li>  <a class="drop-nav-link" href="#about">About</a></li>
+           <li> <a class="drop-nav-link" href="#services">Services</a></li>
+           <li> <a class="drop-nav-link" href="#education">Education</a></li>
+           <li> <a class="drop-nav-link" href="#work">Work</a></li>
+           <li> <a class="drop-nav-link" href="#client">Client</a></li>
+           <li>  <a class="drop-nav-link" href="#blog">Blog</a></li>
+           <li> <a class="drop-nav-link" href="#contact">Contact</a></li>
+        </ul>
     </header>
     <!-- Hero -->
 
-    <section class="hero bottom-line">
+    <section id="home" class="hero bottom-line">
         <div class="welcoming long-row hero-row">
             <h2>Hello &amp; welcome</h2>
             <h1>I am <span></span></h1>
         </div>
         <div class="hero-socials hero-row">
-            space for social icons
+            <a href="#" target="_black" class="fab fa-facebook-f" rel="noreferrer"></a>
+             <a href="#" target="_black" class="fab fa-linkedin-in" rel="noreferrer"></a>
+            <a href="#" target="_black" class="fab fa-dribbble" rel="noreferrer"></a>
+            <a href="#" target="_black" class="fab fa-google-plus-g" rel="noreferrer"></a>
+            <a href="#" target="_black" class="fab fa-twitter" rel="noreferrer"></a>
         </div>
         <a class="hero-link hero-row" href="#">Download <span>cv</span></a>
 
-        <a class="arrow-down" href="#"></a>
+        <a class="arrow-down" href="#about"></a>
         <div id="particles-js"></div>
     </section>
 
     <!-- About -->
 
-    <section class="about-me">
+    <section id="about" class="about-me">
 
 
         <div class="short-row about">
@@ -106,7 +125,7 @@
 
 
     <!-- Services -->
-    <section class="services">
+    <section id="services" class="services">
         <div class="short-row">
             <h2 class="heading-2">Our <span>Services</span> </h2>
             <div class="separator-asterisk">
@@ -134,11 +153,43 @@
         </div>
     </section>
     <!-- Work -->
+    <section class="work-container">
+        <div class="short-row">
+            <h1 class="heading-2">Our <span class="work-span">Work</span> </h1>
+            *
+            <p class="subtext"> It is a long established fact that a reader will be distracted by the readable contenr of a page when lookng at its layout</p>
+        </div>
+
+        <div class="work-display-container long-row">
+            <div class="btn-container">
+        
+
+            </div>
+            <div class="display-container">
+
+            </div>
+
+
+        </div>
+
+
+        <!-- modal ----------------->
+        <div class="image-view"></div>
+        <div class="image-box">
+            <div id='close-btn'>X</div>
+            <div id="prev-btn"></div>
+            <div id="next-btn"></div>
+            <div id="img-progress"></div>
+       
+        </div>
+
+
+    </section>
     <!-- Client -->
 
 
 
-    <section class="section our-clients-bg">
+    <section id="client" class="section our-clients-bg">
         <div class="short-row">
             <h2 class="heading-2 white-text">Our <span>Client</span></h2>
             <div class="separator-asterisk">
@@ -256,7 +307,7 @@
     </section>
 
     <!-- Blog -->
-    <section class="blog">
+    <section id="blog" class="blog">
         <div class="short-row">
             <div class="section-title">
                 <h2 class="heading-2">Our <span>blog</span></h2>
@@ -318,7 +369,7 @@
 
     </section>
     <!-- Contact -->
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="short-row">
             <div class="section-title">
                 <h2 class="heading-2">Get in <span>touch</span></h2>
@@ -330,6 +381,7 @@
                     temporibus ipsa voluptatum recusandae vitae illum.</p>
             </div>
         </div>
+        <div id="snackbar"></div>
         <div class="long-row">
             <div class="contacts">
                 <div class="contact-boxes">
@@ -353,17 +405,17 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input id="name" type="text" placeholder="Your name..." required>
+                            <input data-validation="name" id="name" type="text" placeholder="Your name..." required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input id="email" type="email" placeholder="Your email..." required>
+                            <input data-validation="email"  id="email" type="email" placeholder="Your email..." required>
                         </div>
                     </div>
                     <label for="subject">Subject</label>
-                    <input id="subject" type="text" placeholder="Your subject..." required>
+                    <input data-validation="subject"  id="subject" type="text" placeholder="Your subject..." required>
                     <label for="message">Message</label>
-                    <textarea id="message" placeholder="Your message..." required></textarea>
+                    <textarea data-validation="text"  id="message" placeholder="Your message..." required></textarea>
                     <button class="btn" type="submit">Send message</button>
                 </form>
             </div>
