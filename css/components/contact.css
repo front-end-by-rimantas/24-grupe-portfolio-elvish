@@ -131,3 +131,13 @@
     }
 
 }
+
+@media (max-width: 600px) {
+    .contact-boxes {
+        display: inline-block;
+        width: 100%;
+    }
+    .form {
+    padding: 0 100px;
+    }
+}
