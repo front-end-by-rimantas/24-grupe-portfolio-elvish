@@ -330,6 +330,7 @@
                     temporibus ipsa voluptatum recusandae vitae illum.</p>
             </div>
         </div>
+        <div id="snackbar"></div>
         <div class="long-row">
             <div class="contacts">
                 <div class="contact-boxes">
@@ -353,17 +354,17 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input id="name" type="text" placeholder="Your name..." required>
+                            <input data-validation="name" id="name" type="text" placeholder="Your name..." required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input id="email" type="email" placeholder="Your email..." required>
+                            <input data-validation="email"  id="email" type="email" placeholder="Your email..." required>
                         </div>
                     </div>
                     <label for="subject">Subject</label>
-                    <input id="subject" type="text" placeholder="Your subject..." required>
+                    <input data-validation="subject"  id="subject" type="text" placeholder="Your subject..." required>
                     <label for="message">Message</label>
-                    <textarea id="message" placeholder="Your message..." required></textarea>
+                    <textarea data-validation="text"  id="message" placeholder="Your message..." required></textarea>
                     <button class="btn" type="submit">Send message</button>
                 </form>
             </div>
