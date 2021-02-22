@@ -99,3 +99,30 @@
     color: #000;
     
 }
+
+
+@media (max-width: 770px) {
+    .contacts {
+        flex-direction: column;
+    }
+    .contact-boxes {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        text-align: center;
+        order: 2;
+        margin-top: 50px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form-row,
+    .form-group {
+        flex-direction: column;
+        width: 100%;
+        order: 1;
+    }
+
+}
