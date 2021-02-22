@@ -1,171 +1,123 @@
 @import './variables.css';
 /* Global css for all sections */
 .heading-2 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 32px;
-    margin-bottom: 8px;
-    color: #212529;
-    text-transform: capitalize;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: #212529;
+  text-transform: capitalize;
 }
 
 .heading-2 > span {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 .subtext {
-    text-align: center;
-    color: #6c757d;
-    margin: 8px 0 16px 0;
+  text-align: center;
+  color: #6c757d;
+  margin: 8px 0 16px 0;
 }
 
 .white-text {
-    color: #fff;
+  color: #fff;
 }
 
 .separator-asterisk {
-    text-align: center;
-    font-size: 32px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.material-icons {
+  font-size: 45px;
 }
 
 .section {
-    padding: 80px 0;
+  padding: 80px 0;
 }
 
 /* Our client */
 .our-clients-bg {
-    background-color: var(--gray-bg);
-    background-image: linear-gradient(
+  background-color: var(--gray-bg);
+  background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
     url(../../img/Client/our-client-mountain.jpg);
-    background-size: cover;
-    background-position: center center;
-    color: var(--gray-bg);
+  background-size: cover;
+  background-position: center center;
+  color: var(--gray-bg);
 }
 
 .separator-asterisk::before,
 .separator-asterisk::after {
-    display: inline-block;
-    content: '';
-    background-color: #c4c2c2;
-    margin-bottom: 10px;
-    width: 30px;
-    height: 1px;
-}
-
-.material-icons {
-    font-size: 45px;
+  display: inline-block;
+  content: '';
+  background-color: #c4c2c2;
+  margin-bottom: 10px;
+  width: 30px;
+  height: 1px;
 }
 
 .slider {
-    max-width: 580px;
-    display: flex;
-}
-
-.slider .card {
-    padding: 0 10px;
-    width: 100%;
-    text-align: center;
+  max-width: 580px;
+  padding: 0;
+  display: flex;
+  margin: 0 calc((100% - 580px) / 2);
 }
 
 .slider i {
-    font-size: 40px;
+  font-size: 40px;
+}
+
+.slider .card {
+  padding: 10px 0;
+  width: 580px;
+  text-align: center;
+}
+
+@media (max-width: 770px) {
+  .slider .card {
+    width: 500px;
+  }
+  .slider {
+    margin: 0 calc((100% - 500px) / 2);
+  }
+}
+
+.carousel-names {
+  font-size: 20px;
+}
+
+.carousel-names::after {
+  content: 'Google';
+  font-size: 16px;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: lighter;
 }
 
 .content > p {
-    font-size: 18px;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.fa-user {
+  padding: 30px 0 20px;
 }
 
 .owl-dots > button {
-    width: 10px;
-    height: 10px;
-    background-color: azure;
+  width: 10px;
+  height: 10px;
+  background-color: azure;
 }
 .owl-dots > button span {
-    width: 10px;
-    height: 10px;
-    background-color: azure;
+  width: 10px;
+  height: 10px;
+  background-color: azure;
 }
 
-/* Trusted Clients */
-.section-gray-bg {
-    background-color: var(--gray-bg);
-    padding: 80px 0;
-}
-
-.client-logos {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-}
-
-.client-logos > img {
-    height: 100px;
-    width: auto;
-}
-
-@media only screen and (max-width:992px) {
-    .client-logos {
-        flex-direction: column;
-        align-items: center;
-    }
-    .client-logos > img {
-        margin: 10px calc((100% - 100px) / 2);
-    }
-}
-
-/* Subscribe */
-
-.sub-form-div {
-    padding: 0 10px;
-}
-
-.sub-form {
-    width: 95%;
-    margin: 50px 10px 0 10px;
-    position: relative;
-}
-
-.sub-form > label {
-    font-size: 0;
-}
-
-.sub-form > input {
-    display: inline-block;
-    background-color: #f1f1f1;
-    color: #4c5667;
-    width: 100%;
-    border: none;
-    padding: 15px 150px 15px 30px;
-    font-size: 17px;
-    outline: none;
-    border: none;
-    border-radius: 43px;
-    
-}
-
-.sub-form > button {
-    display: inline-block;
-    border: 2px solid #000;
-    background-color: #000;
-    color: #fff;
-    padding: 10px 26px;
-    font-size: 17px;
-    border-radius: 30px;
-    position: absolute;
-    top: 25px;
-    right: 4px;
-    transition: all 0.5s ease;
-    outline: none;
-}
-
-.sub-form > button:hover {
-    background-color: #fff;
-    color: #000;
-}
