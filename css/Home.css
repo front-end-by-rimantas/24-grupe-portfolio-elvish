@@ -7,6 +7,7 @@
 
 /* Nav */
 @import './components/nav-bar.css';
+@import './components/hamburger.css';
 /* Hero */
 @import './components/hero.css';
 @import './components/arrow-down.css';
