@@ -23,6 +23,8 @@ import { SubForm } from './components/subscribe-form.js'
 import { carousel } from './components/carousel.js'
 // Contact
 // Footer
+import {renderSocials} from './components/renderSocials.js'
+import{socialsData} from './data/socialsData.js'
 // EXECUTION
 // Nav
 navScroll();
@@ -47,3 +49,4 @@ new SubForm('.sub-form');
 carousel();
 // Contact
 // Footer
+renderSocials('.socials', socialsData)
