@@ -1,0 +1,29 @@
+.statistics{
+    background-image: url(/img/Services/service-mountain.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.count-col{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.count-content{
+    border: 1px dotted #e7e7e7;
+    padding: 20px;
+    
+}
+
+.count-icon{
+
+}
+
+.count-num{
+
+}
+
+.count-text{
+
+}
