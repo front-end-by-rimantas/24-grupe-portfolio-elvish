@@ -11,9 +11,7 @@ ul {
   color: white;
   animation: drop 2s;
 }
-.drop-nav-link:hover {
-  border-bottom: 1px solid white;
-}
+
 .drop-nav-link:hover::before {
   content: '';
   position: absolute;
