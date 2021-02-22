@@ -1,7 +1,7 @@
 // IMPORTS
 // Nav
 import { navScroll } from './components/nav-bar.js'
-import {ham} from './components/hamburger.js'
+import { ham } from './components/hamburger.js'
 // Hero
 // About
 import { ProgressBar } from './components/Progress-bar.js'
@@ -13,6 +13,8 @@ import { topServices } from './data/services.js'
 import { bottomServices } from './data/services.js'
 
 // Statistics
+import { Statistics } from './components/Statistics.js'
+import { statistics } from './data/statistics.js'
 // Education
 // Available Freelancer
 // Work
@@ -25,8 +27,8 @@ import { carousel } from './components/carousel.js'
 // Contact
 import { contactValidation } from './components/contactValidation.js'
 // Footer
-import {renderSocials} from './components/renderSocials.js'
-import {socialsData} from './data/socialsData.js'
+import { renderSocials } from './components/renderSocials.js'
+import { socialsData } from './data/socialsData.js'
 // EXECUTION
 // Nav
 ham();
@@ -42,10 +44,11 @@ new Services('.top-services', topServices)
 new Services('.bottom-services', bottomServices)
 
 // Statistics
+new Statistics(".counter", statistics)
 // Education
 // Available Freelancer
 // Work
-import {renderWorkSection} from "./components/our-work.js"
+import { renderWorkSection } from "./components/our-work.js"
 
 
 
