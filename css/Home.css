@@ -22,6 +22,7 @@
 /* Available Freelancer */
 @import './components/freelancer.css';
 /* Work */
+@import './components/work.css';
 /* Client */
 @import './components/our-client.css';
 /* Trusted Clients */

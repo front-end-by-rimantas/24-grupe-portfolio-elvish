@@ -42,6 +42,11 @@ new Services('.bottom-services', bottomServices)
 // Education
 // Available Freelancer
 // Work
+import {renderWorkSection} from "./components/our-work.js"
+
+
+renderWorkSection();
+
 // Client
 // Trusted Clients
 // Subscribe
