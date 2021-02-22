@@ -13,6 +13,7 @@
 .socials {
     display: flex;
     gap: 12px;
+    flex-wrap: wrap;
 }
 
 .socials > .fab {
