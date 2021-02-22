@@ -15,7 +15,7 @@ class Services {
         return `<div class="service-col">
             <div class="service-content">
                 <div class="service-icon">
-                    <i class="${data.icon}">icon</i>
+                    <i class="${data.icon}"></i>
                 </div>
                 <div class="service-texts">
                     <h5 class="service-heading">${data.heading}</h5>
