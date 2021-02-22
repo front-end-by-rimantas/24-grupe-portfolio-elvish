@@ -1,6 +1,7 @@
 // IMPORTS
 // Nav
 import { navScroll } from './components/nav-bar.js'
+import {ham} from './components/hamburger.js'
 // Hero
 // About
 import { ProgressBar } from './components/Progress-bar.js'
@@ -24,10 +25,9 @@ import { carousel } from './components/carousel.js'
 // Contact
 import { contactValidation } from './components/contactValidation.js'
 // Footer
-import {renderSocials} from './components/renderSocials.js'
-import{socialsData} from './data/socialsData.js'
 // EXECUTION
 // Nav
+ham();
 navScroll();
 // Hero
 particlesJS.load('particles-js', 'particles.json', function () { });
@@ -42,6 +42,11 @@ new Services('.bottom-services', bottomServices)
 // Education
 // Available Freelancer
 // Work
+import {renderWorkSection} from "./components/our-work.js"
+
+
+renderWorkSection();
+
 // Client
 // Trusted Clients
 // Subscribe
@@ -51,4 +56,3 @@ carousel();
 // Contact
 contactValidation('.form')
 // Footer
-renderSocials('.socials', socialsData)
