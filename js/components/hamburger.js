@@ -5,7 +5,7 @@ function ham() {
     
     for (i = 0; i<DOM.length; i++) {
         DOM[i].addEventListener('click', function () {
-            this.classList.toggle('active');
+            this.classList.toggle('active-ham');
             const DOMlink = document.querySelector(".drop-down-links")
             if(DOMlink.style.display === 'block') {
                 DOMlink.style.display = 'none';
