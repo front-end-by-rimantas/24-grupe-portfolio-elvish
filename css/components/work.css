@@ -23,6 +23,16 @@
   -o-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+.active {
+  background: black;
+  color: white;
+}
+
+.filter-btn:hover {
+  background: black;
+  color: white;
 }
 
 .display-container {
@@ -43,6 +53,69 @@
   border-radius: 5px;
   transition: all 2s;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.work-zoom-img img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  transition: transform 1s;
+}
+
+.display-item:hover .work-zoom-img img {
+  transform: scale(1.1);
+}
+
+.work-zoom-img {
+  position: relative;
+}
+
+.display-item-overlay {
+  background-image: linear-gradient(#1f1e1ed1, #1f1e1ed1);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 20% 20%;
+  transition: background-size 0.5s, color 0.5s;
+}
+
+.display-item:hover .display-item-overlay {
+  /* background: rgba(41, 38, 38, 0.681); */
+  position: absolute;
+  display: inline block;
+
+  top: 10px;
+  right: 10px;
+  left: 10px;
+  bottom: 10px;
+  border-radius: 5px;
+
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+.overlay-content {
+  background: transparent;
+  width: 50%;
+  display: inline block;
+  float: right;
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.overlay-content h4 {
+  color: white;
+  font-size: 18px;
+}
+
+.overlay-content h5 {
+  color: lightgray;
+  font-size: 12px;
 }
 
 /* modal image slider --------------------- */
@@ -58,8 +131,8 @@
 }
 
 .image-box {
-  width: 40vw;
-  height: 60vh;
+  width: 50vw;
+  height: 80vh;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -83,12 +156,12 @@
 }
 #prev-btn {
   border-right: 40px solid grey;
-  left: -200px;
+  left: -300px;
 }
 
 #next-btn {
   border-left: 40px solid grey;
-  right: -200px;
+  right: -300px;
 }
 
 #next-btn:hover,
@@ -99,17 +172,24 @@
 #close-btn {
   width: 20px;
   height: 20px;
-  background-color: tomato;
+  background-color: transparent;
   position: fixed;
   right: 0;
   top: -20px;
+  font-size: 12px;
+  color: lightgray;
+  text-align: right;
 }
 
 #img-progress {
   width: 40px;
   height: 20px;
-  background-color: tomato;
+  background-color: transparent;
   position: fixed;
   right: 0;
   bottom: -20px;
+  font-size: 12px;
+  color: lightgray;
+  text-align: right;
+  padding-top: 5px;
 }

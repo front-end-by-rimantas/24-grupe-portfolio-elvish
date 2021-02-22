@@ -21,11 +21,18 @@ function toTitleCase(str) {
 function renderItems(items){
     let display = items.map(function(item){
 
-        return `<article data-item-id='${item.id}' style="background-image: url(${item.img});" class="display-item">
-        <div class="display-item-text">
+        return `<article data-item-id='${item.id}'  class="display-item">
+        
+        <div class="work-zoom-img">
+        <img src="${item.img}" alt="">
+        <div class="display-item-overlay">
+        <div class="overlay-content">
         <h4>${toTitleCase(item.title)}</h4>
         <h5> ${item.description} </h5>
         </div>
+        </div>
+        </div>
+
         </article>`
         
     });
@@ -33,7 +40,23 @@ function renderItems(items){
 
     displayContainer.innerHTML = display;
 
-    
+
+    //render funkcija---------------------------
+    // function renderItems(items){
+    // let display = items.map(function(item){
+
+    //     return `<article data-item-id='${item.id}' style="background-image: url(${item.img});" class="display-item">
+    //     <div class="display-item-text">
+    //     <h4>${toTitleCase(item.title)}</h4>
+    //     <h5> ${item.description} </h5>
+    //     </div>
+    //     </article>`
+        
+    // });
+    // display = display.join('');
+
+    // displayContainer.innerHTML = display;
+    //funckija-----------------------------------------------
 
 
     
@@ -81,14 +104,9 @@ function renderItems(items){
     imageBox.style.background = `url(../img/work/${currentImageIdx}.jpg) center/cover no-repeat`;
     imgProgress.innerHTML = `<p>${currentImageIdx}/${allImages.length} </p>`
 
+
     };
 
-    
-
-
-
-    
-    
     
     prevBtn.addEventListener('click', function(e){
         
@@ -120,13 +138,6 @@ function renderItems(items){
         e.stopPropagation()
     })
 
-    
-
-
-
-
-  
-
 
 }  //end of renderItems function
 
@@ -150,7 +161,7 @@ function displayMenuButtons(){
         //renders btns from categories
         const categoryBtns = categories.map(function(category){
             
-            return `<button class="filter-btn" type="button" data-id="${category}">${toTitleCase(category)}</button>`
+            return `<button class="filter-btn inactive" type="button" data-id="${category}">${toTitleCase(category)}</button>`
         }).join('')
         
         btnContainer.innerHTML = categoryBtns;
@@ -161,12 +172,24 @@ function displayMenuButtons(){
         //filters items
         filterBtns.forEach(function(btn) {
          btn.addEventListener('click', function(e) {
-             const category = e.currentTarget.dataset.id;
+        
+        
+        let current = document.getElementsByClassName("active");
+
+        // If there's no active class
+        if (current.length > 0) {
+        current[0].className = current[0].className.replace(" active", "");
+        }
+        // Add the active class to the current/clicked button
+        this.className += " active";
+
+
+        //filters categories 
+        const category = e.currentTarget.dataset.id;
         const itemCategory = workData.filter(function(item){
             //loops through categories
             for (let i of item.categories)
             if (i === category){
-                console.log(item)
                 return item;
                 
             }
