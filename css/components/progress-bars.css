@@ -18,7 +18,7 @@
 
 .pTexts{
     width: 90%;
-    margin: 0 2.5%;
+    margin: 0 5%;
     font-weight: bold;
 }
 
@@ -40,7 +40,7 @@
     height: 4px;
     background-color: #e9ecef;
     border-radius: 2px;
-    margin: 0 2.5%;
+    margin: 0 5%;
     margin-top: 20px;
 }
 .progress-bar > .bar > .progress  {
@@ -61,7 +61,25 @@
 }
 
 
+@media (max-width:992px) {
+    .progress-bars{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+}
 
+@media (max-width:680px){
+    .progress-bars {
+        width: 100%;
+    }
+    .progress-bar > .bar,
+    .pTexts{
+        width: 95%;
+        margin: 0 2.5%;
+        
+    }
+}
 
 
 @keyframes loading{

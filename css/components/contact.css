@@ -13,7 +13,7 @@
 }
 
 .contact-box {
-    margin: 25px;
+    margin-bottom: 15px;
 }
 
 .contact-text {
@@ -21,7 +21,7 @@
     color: var(--text-gray);
 }
 
-.contact-box > .icon,
+.contact-box > .fa,
 .contact-box > .contact-title,
 .contact-box > .contact-text {
     margin-bottom: 8px;
@@ -66,7 +66,7 @@
 .form > label,
 .form-group > label {
     display: block;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 10px;
     font-size: 16px;
 }
@@ -79,9 +79,23 @@
     color: #fff;
     font-size: 15px;
     text-align: center;
+    text-transform: capitalize;
     border: 2px solid #000;
     border-radius: 4px;
     outline: none;
     padding: 14px 24px;
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.form > .btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.contact-box > .fa {
+    font-size: 40px;
+    text-decoration: none;
+    color: #000;
+    
 }

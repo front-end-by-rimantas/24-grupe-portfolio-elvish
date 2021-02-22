@@ -1,6 +1,5 @@
 .blog {
     background-color: var(--gray-bg);
-    background-color: #F8F9FA;
     padding: 80px 0;
 }
 
@@ -18,7 +17,7 @@
 
 .box {
     background: #fff;
-    width: 31%;
+    width: 350px;
     padding: 8px;
     border-radius: 5px;
     text-align: center;
@@ -68,5 +67,96 @@
     color: var(--text-gray);
 }
 
+.box-img {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
 
- 
+ .slider-prv,
+ .slider-nxt{
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+    color: #fff8;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.slider-prv span,
+.slider-nxt span {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-nxt {
+    right: 0;
+}
+
+.slider-prv {
+    left: 0;
+}
+
+.slider-nxt:hover,
+.slider-prv:hover {
+    color: #fff;
+}
+
+.slide,
+.slide-back {
+    position: absolute;
+    transform: translateX(0);
+    animation-name: slide;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.slide-back {
+    animation-name: slide-back;
+}
+
+@keyframes slide-back {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-340px);
+    }
+}
+
+@keyframes slide {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(340px);
+    }
+}
+
+.blog-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+}

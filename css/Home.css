@@ -2,22 +2,27 @@
 @import './components/layout.css';
 @import './components/variables.css';
 
+@import './components/all.min.css';
 /* CUSTOM HOME PAGE CSS */
 
 /* Nav */
 @import './components/nav-bar.css';
+@import './components/hamburger.css';
 /* Hero */
 @import './components/hero.css';
 @import './components/arrow-down.css';
+@import './components/particles-style.css';
 /* About */
 @import './components/about-me.css';
 @import './components/progress-bars.css';
 /* Services */
+@import './components/services.css';
 /* Statistics */
 /* Education */
 /* Available Freelancer */
 @import './components/freelancer.css';
 /* Work */
+@import './components/work.css';
 /* Client */
 @import './components/our-client.css';
 /* Trusted Clients */
@@ -26,4 +31,6 @@
 @import './components/blog.css';
 /* Contact */
 @import './components/contact.css';
+@import './components/snackbar.css';
 /* Footer */
+@import './components/footer.css';
