@@ -1,18 +1,18 @@
 const topServices = [
         {
-                icon: "mbri-database",
+                icon: "fas fa-server",
                 heading: 'Graphic Design',
                 text: 'The standart chunk of Lorem Ipsum used since the is reproduced \
         below for those interested'
         },
         {
-                icon: "mbri-website-theme",
+                icon: "fas fa-palette",
                 heading: 'Unlimited Color',
                 text: 'The standart chunk of Lorem Ipsum used since the is reproduced \
         below for those interested'
         },
         {
-                icon: "mbri-growing-chart",
+                icon: "fas fa-chart-line",
                 heading: 'Media Marketing',
                 text: 'The standart chunk of Lorem Ipsum used since the is reproduced \
         below for those interested'
@@ -24,19 +24,19 @@ const topServices = [
 
 const bottomServices = [
         {
-                icon: "mbri-wifi",
+                icon: "fas fa-wifi",
                 heading: 'Unlimited Wifi',
                 text: 'The standart chunk of Lorem Ipsum used since the is reproduced \
         below for those interested'
         },
         {
-                icon: "mbri-responsive",
+                icon: "fas fa-desktop",
                 heading: 'Responsive Design',
                 text: 'The standart chunk of Lorem Ipsum used since the is reproduced \
         below for those interested'
         },
         {
-                icon: "mbri-edit",
+                icon: "fas fa-pencil-alt",
                 heading: 'Easy to customize',
                 text: 'The standart chunk of Lorem Ipsum used since the is reproduced \
         below for those interested'
