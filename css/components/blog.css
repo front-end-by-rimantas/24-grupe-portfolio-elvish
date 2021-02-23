@@ -63,6 +63,11 @@
     font-weight: 400;
 }
 
+.box-date > a,
+.box-category > a {
+    text-transform: capitalize;
+}
+
 .read-more {
     color: var(--text-gray);
 }
