@@ -1,10 +1,10 @@
 function owlKarouel() {
     $(".slider").owlCarousel({
         items: 1,
-        loop: false,
+        loop: true,
         mouseDrag: true,
         rewind: false,
-        dots: false,
+        dots: true,
         autoplay: true,
         autoplaySpeed: 1000,
         smartSpeed: 1500,
