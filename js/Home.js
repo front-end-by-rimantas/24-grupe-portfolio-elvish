@@ -21,9 +21,9 @@ import { bottomServices } from './data/services.js'
 // Subscribe
 import { forms } from './components/subscribe-form.js';
 // Blog
-import { carousel } from './components/carousel.js'
-import {renderBlog} from './components/renderBlog.js'
 import {blogData} from './data/blogData.js'
+import {renderBlog} from './components/renderBlog.js'
+import { carousel } from './components/carousel.js'
 // Contact
 import { contactValidation } from './components/contactValidation.js'
 // Footer
@@ -60,8 +60,8 @@ owlKarouel();
 // // Subscribe
 forms();
 // Blog
-carousel();
 renderBlog(blogData);
+carousel();
 // Contact
 contactValidation('.form')
 // Footer

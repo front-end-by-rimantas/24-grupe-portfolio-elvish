@@ -23,8 +23,6 @@ function carousel() {
 // image slide on click
 
 let slideIndex = 1;
-// slideBack(slideIndex);
-// slideForward(slideIndex);
 
 const prvButton = document.querySelector('.slider-prv');
 const nxtButton = document.querySelector('.slider-nxt');
