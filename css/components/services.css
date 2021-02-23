@@ -24,6 +24,7 @@
 
 .service-content{
     border: 1px dotted #e7e7e7;
+    border-radius: 4px;
     padding: 20px;
 }
 
