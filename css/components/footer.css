@@ -12,6 +12,7 @@
 
 .socials {
     display: flex;
+    align-items: center;
     gap: 12px;
     flex-wrap: wrap;
 }
@@ -31,6 +32,8 @@
 
 .socials > .fab:hover {
     transform: rotate(360deg);
+    color: #000;
+    border-color: #000;
 }
 
 .top-link {
@@ -47,4 +50,27 @@
     border-radius: 4px;
     text-decoration: none;
     z-index: 999;
+}
+
+@media (max-width: 900px) {
+    .top-link {
+        display: none;
+    }
+}
+
+@media (max-width: 770px) {
+    .footer-inner {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .socials {
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .copyrights {
+        order: 2;
+        display: inline-block;
+        width: 100%;
+    }
 }
