@@ -160,3 +160,13 @@
     font-weight: 700;
     color: #000;
 }
+
+@media (max-width: 770px) {
+    .box {
+        margin: 10px 0;
+    }
+
+    .blog {
+        padding: 40px 0;
+    }
+  }

@@ -31,6 +31,10 @@
   font-size: 32px;
 }
 
+.material-icons {
+  font-size: 45px;
+}
+
 .section {
   padding: 80px 0;
 }
@@ -53,117 +57,106 @@
 .separator-asterisk::after {
   display: inline-block;
   content: '';
-  background-color: #c4c2c2;
+  background-color: var(--text-gray);
   margin-bottom: 10px;
   width: 30px;
   height: 1px;
 }
 
-.material-icons {
-  font-size: 45px;
-}
-
 .slider {
   max-width: 580px;
+  padding: 0;
   display: flex;
-}
-
-.slider .card {
-  padding: 0 10px;
-  width: 100%;
-  text-align: center;
+  margin: 0 calc((100% - 580px) / 2);
 }
 
 .slider i {
   font-size: 40px;
 }
 
+.slider .card {
+  padding: 10px 0;
+  width: 580px;
+  text-align: center;
+}
+
+@media (max-width: 770px) {
+  .slider .card {
+    width: 500px;
+    padding: 0 10px;
+  }
+  .slider {
+    margin: 0 calc((100% - 500px) / 2);
+  }
+}
+
+.carousel-names {
+  font-size: 20px;
+}
+
+.carousel-names::after {
+  content: 'Google';
+  font-size: 16px;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: lighter;
+}
+
 .content > p {
   font-size: 18px;
+  padding-top: 20px;
 }
 
-.owl-dots > button {
-  width: 10px;
-  height: 10px;
-  background-color: azure;
-}
-.owl-dots > button span {
-  width: 10px;
-  height: 10px;
-  background-color: azure;
+.fa-user {
+  padding: 30px 0 20px;
 }
 
-/* Trusted Clients */
-.section-gray-bg {
-  background-color: var(--gray-bg);
-  padding: 80px 0;
-}
-
-.client-logos {
+/* Dots */
+.owl-dots {
   display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
-}
-
-.client-logos > img {
-  height: 100px;
-  width: auto;
-}
-
-@media only screen and (max-width: 992px) {
-  .client-logos {
-    flex-direction: column;
-    align-items: center;
-  }
-  .client-logos > img {
-    margin: 10px calc((100% - 100px) / 2);
-  }
-}
-
-/* Subscribe */
-
-.sub-form-div {
-  padding: 0 10px;
-}
-
-.sub-form {
-  width: 95%;
-  margin: 50px 10px 0 10px;
-  position: relative;
-}
-
-.sub-form > label {
-  font-size: 0;
-}
-
-.sub-form > input {
-  display: inline-block;
-  background-color: #f1f1f1;
-  color: #4c5667;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  border: none;
-  padding: 15px 150px 15px 30px;
-  font-size: 17px;
-  outline: none;
-  border: none;
-  border-radius: 43px;
+  height: 50px;
 }
 
-.sub-form > button {
+@media (max-width: 770px) {
+  .owl-dots{
+  width: 500px;
+  }
+}
+
+.owl-dots .owl-dot {
   display: inline-block;
-  border: 2px solid #000;
-  background-color: #000;
-  color: #fff;
-  padding: 10px 26px;
-  font-size: 17px;
-  border-radius: 30px;
-  position: absolute;
-  top: 25px;
-  right: 4px;
-  transition: all 0.5s ease;
+  height: 10px;
 }
 
-.sub-form > button:hover {
-  background-color: #fff;
-  color: #000;
+.owl-dots > .owl-dot {
+  display: flex;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.owl-dots .owl-dot span {
+  display: inline-block;
+  width: 12px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: var(--text-gray);
+}
+
+.owl-dot.active > span {
+  width: 20px;
+  background: #fff;
+  animation-name: expand;
+  animation-duration: 1s;
+}
+
+@keyframes expand {
+  0% {
+    width: 12px;
+  }
+  100% {
+    width: 20px;
+  }
 }
