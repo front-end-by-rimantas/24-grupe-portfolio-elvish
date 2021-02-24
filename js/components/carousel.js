@@ -19,23 +19,25 @@ function carousel() {
 
 }
 
-
 // image slide on click
 
 let slideIndex = 1;
 
-const prvButton = document.querySelector('.slider-prv');
-const nxtButton = document.querySelector('.slider-nxt');
-
-prvButton.addEventListener('click', () => {
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.slider-prv').forEach(prvButton => {
+  prvButton.addEventListener('click', () => {
   clearTimeout(timeout)
   slideBack(slideIndex += -1);
-});
+  });
+ });
+document.querySelectorAll('.slider-nxt').forEach(nxtButton => {
+    nxtButton.addEventListener('click', () => {
+    clearTimeout(timeout)
+    slideForward(slideIndex += 1)
+  });
+ });
+}, false);
 
-nxtButton.addEventListener('click', () => {
-  clearTimeout(timeout)
-  slideForward(slideIndex += 1)
-});
 
 function slideBack(n) {
   const images = document.querySelectorAll('.carousel-img');

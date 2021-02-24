@@ -2,7 +2,7 @@ const blogData = {
     selector: '#blog_section',
     items:[
         { 
-            image: './img/Blog/blog-1.jpg',
+            image: ['./img/Blog/blog-1.jpg'],
             title: 'There are many variations',
             category: 'lifestyle',
             date: '13 February 2018',
@@ -11,7 +11,7 @@ const blogData = {
 
         },
         { 
-            image: './img/Blog/blog-2.jpg',
+            image: ['./img/Blog/blog-2.jpg'],
             title: 'Contrary to popular belief',
             category: 'travel',
             date: '13 February 2018',
