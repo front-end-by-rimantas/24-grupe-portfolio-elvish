@@ -6,12 +6,12 @@ const statistics = [
     },
     {
         icon: "fas fa-gift",
-        count: "6400",
+        count: 6400,
         text: "Completed Projects"
     },
     {
         icon: "fas fa-user-alt",
-        count: "2389",
+        count: 2389,
         text: "No. of Clients"
     },
     {

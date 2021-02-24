@@ -16,6 +16,7 @@ import { bottomServices } from './data/servicesData.js'
 // Statistics
 import { Statistics } from './components/statistics/Statistics.js'
 import { statistics } from './data/statistics.js'
+import { countUp } from './components/statistics/counter.js'
 // Education
 // Available Freelancer
 // Work
@@ -48,6 +49,7 @@ services(bottomServices)
 
 // Statistics
 new Statistics(".counter", statistics)
+countUp()
 // Education
 // Available Freelancer
 // Work

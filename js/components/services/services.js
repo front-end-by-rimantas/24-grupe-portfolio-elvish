@@ -8,7 +8,7 @@ function services(data) {
     const DOM = document.querySelector(data.selector);
     let HTML = '';
 
-    console.log(data.list, data.selector, Array.isArray(data.list));
+
 
     if (!Array.isArray(data.list)) {
         return false;
@@ -27,11 +27,11 @@ function services(data) {
         </div>
     </div>`
 
-        console.log(list);
+
     }
 
     DOM.innerHTML = HTML;
-    console.log(DOM);
+
 
 
 }
