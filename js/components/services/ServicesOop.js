@@ -7,7 +7,14 @@ class Services {
     }
 
     init() {
+        this.isValidData(this.data)
         this.renderServices()
+    }
+
+    isValidData(data) {
+        if (typeof data !== Array.isArray(data)) {
+            return false
+        }
     }
 
     generateServices(data) {
