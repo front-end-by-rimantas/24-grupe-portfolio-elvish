@@ -57,7 +57,7 @@
 .separator-asterisk::after {
   display: inline-block;
   content: '';
-  background-color: #c4c2c2;
+  background-color: var(--text-gray);
   margin-bottom: 10px;
   width: 30px;
   height: 1px;
@@ -83,6 +83,7 @@
 @media (max-width: 770px) {
   .slider .card {
     width: 500px;
+    padding: 0 10px;
   }
   .slider {
     margin: 0 calc((100% - 500px) / 2);
@@ -110,14 +111,52 @@
   padding: 30px 0 20px;
 }
 
-.owl-dots > button {
-  width: 10px;
-  height: 10px;
-  background-color: azure;
-}
-.owl-dots > button span {
-  width: 10px;
-  height: 10px;
-  background-color: azure;
+/* Dots */
+.owl-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
 }
 
+@media (max-width: 770px) {
+  .owl-dots{
+  width: 500px;
+  }
+}
+
+.owl-dots .owl-dot {
+  display: inline-block;
+  height: 10px;
+}
+
+.owl-dots > .owl-dot {
+  display: flex;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.owl-dots .owl-dot span {
+  display: inline-block;
+  width: 12px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: var(--text-gray);
+}
+
+.owl-dot.active > span {
+  width: 20px;
+  background: #fff;
+  animation-name: expand;
+  animation-duration: 1s;
+}
+
+@keyframes expand {
+  0% {
+    width: 12px;
+  }
+  100% {
+    width: 20px;
+  }
+}
