@@ -8,12 +8,13 @@ import { ProgressBar } from './components/Progress-bar.js'
 import { leftProgressBar } from './data/progress-bars.js'
 import { rightProgressBar } from './data/progress-bars.js'
 // Services
-import { Services } from './components/Services.js'
-import { topServices } from './data/services.js'
-import { bottomServices } from './data/services.js'
+import { services } from './components/services/services.js'
+import { Services } from './components/services/ServicesOop.js'
+import { topServices } from './data/servicesData.js'
+import { bottomServices } from './data/servicesData.js'
 
 // Statistics
-import { Statistics } from './components/Statistics.js'
+import { Statistics } from './components/statistics/Statistics.js'
 import { statistics } from './data/statistics.js'
 // Education
 // Available Freelancer
@@ -40,8 +41,10 @@ renderSocials('.hero-socials', socialsData)
 new ProgressBar('.left-progress', leftProgressBar)
 new ProgressBar('.right-progress', rightProgressBar)
 // Services
-new Services('.top-services', topServices)
-new Services('.bottom-services', bottomServices)
+services(topServices)
+services(bottomServices)
+// new Services('.top-services', topServices)
+// new Services('.bottom-services', bottomServices)
 
 // Statistics
 new Statistics(".counter", statistics)
