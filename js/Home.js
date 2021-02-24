@@ -21,12 +21,15 @@ import { bottomServices } from './data/services.js'
 // Subscribe
 import { forms } from './components/subscribe-form.js';
 // Blog
+import {blogData} from './data/blogData.js'
+import {renderBlog} from './components/renderBlog.js'
 import { carousel } from './components/carousel.js'
 // Contact
 import { contactValidation } from './components/contactValidation.js'
 // Footer
 import { renderSocials } from './components/renderSocials.js'
 import { socialsData } from './data/socialsData.js'
+import {backToTop} from './components/backToTop.js'
 // EXECUTION
 // Nav
 ham();
@@ -58,8 +61,10 @@ owlKarouel();
 // // Subscribe
 forms();
 // Blog
+renderBlog(blogData);
 carousel();
 // Contact
-contactValidation('.form')
+contactValidation('.form');
 // Footer
-renderSocials('.socials', socialsData)
+renderSocials('.socials', socialsData);
+backToTop();
