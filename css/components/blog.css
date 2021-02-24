@@ -63,6 +63,11 @@
     font-weight: 400;
 }
 
+.box-date > a,
+.box-category > a {
+    text-transform: capitalize;
+}
+
 .read-more {
     color: var(--text-gray);
 }
@@ -160,3 +165,13 @@
     font-weight: 700;
     color: #000;
 }
+
+@media (max-width: 770px) {
+    .box {
+        margin: 10px 0;
+    }
+
+    .blog {
+        padding: 40px 0;
+    }
+  }

@@ -20,6 +20,7 @@
 /* Statistics */
 @import './components/statistics.css';
 /* Education */
+@import './components/education.css';
 /* Available Freelancer */
 @import './components/freelancer.css';
 /* Work */
@@ -27,7 +28,9 @@
 /* Client */
 @import './components/our-client.css';
 /* Trusted Clients */
+@import './components/trusted-clients.css';
 /* Subscribe */
+@import './components/subscribe-form.css';
 /* Blog */
 @import './components/blog.css';
 /* Contact */

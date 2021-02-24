@@ -23,14 +23,17 @@ import { countUp } from './components/statistics/counter.js'
 // Client
 // Trusted Clients
 // Subscribe
-import { SubForm } from './components/subscribe-form.js'
+import { forms } from './components/subscribe-form.js';
 // Blog
+import { blogData } from './data/blogData.js'
+import { renderBlog } from './components/renderBlog.js'
 import { carousel } from './components/carousel.js'
 // Contact
 import { contactValidation } from './components/contactValidation.js'
 // Footer
 import { renderSocials } from './components/renderSocials.js'
 import { socialsData } from './data/socialsData.js'
+import { backToTop } from './components/backToTop.js'
 // EXECUTION
 // Nav
 ham();
@@ -54,18 +57,22 @@ countUp()
 // Available Freelancer
 // Work
 import { renderWorkSection } from "./components/our-work.js"
+import { owlKarouel } from './components/testimonials-carousel.js'
 
 
 
 renderWorkSection();
 
 // Client
+owlKarouel();
 // Trusted Clients
-// Subscribe
-new SubForm('.sub-form');
+// // Subscribe
+forms();
 // Blog
+renderBlog(blogData);
 carousel();
 // Contact
-contactValidation('.form')
+contactValidation('.form');
 // Footer
-renderSocials('.socials', socialsData)
+renderSocials('.socials', socialsData);
+backToTop();

@@ -1,0 +1,53 @@
+@import './variables.css';
+/* Subscribe */
+
+.sub-form-div {
+    padding: 0 10px;
+}
+
+.section-subscribe h2 {
+    text-transform: capitalize;
+}
+
+.sub-form {
+    width: 95%;
+    margin: 50px 10px 0 10px;
+    position: relative;
+}
+
+.sub-form > label {
+    font-size: 0;
+}
+
+.sub-form > input {
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: #4c5667;
+    width: 100%;
+    border: none;
+    padding: 15px 150px 15px 30px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-radius: 43px;
+}
+
+.sub-form > button {
+    display: inline-block;
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 26px;
+    font-size: 17px;
+    border-radius: 30px;
+    position: absolute;
+    top: 25px;
+    right: 4px;
+    transition: all 0.5s ease;
+    outline: none;
+}
+
+.sub-form > button:hover {
+    background-color: #fff;
+    color: #000;
+}

@@ -1,6 +1,9 @@
 .drop-down-links {
-  display: block;
+  display: none;
   margin-bottom: 20px;
+}
+.click-on-menu {
+  /* background-color: white; */
 }
 
 .drop-nav-link,

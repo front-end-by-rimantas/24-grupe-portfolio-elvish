@@ -99,3 +99,45 @@
     color: #000;
     
 }
+
+
+@media (max-width: 770px) {
+    .contact {
+        padding: 40px 0;
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    .contact-boxes {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        text-align: center;
+        order: 2;
+        margin-top: 50px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form-row,
+    .form-group {
+        flex-direction: column;
+        width: 100%;
+        order: 1;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .contact-boxes {
+        display: inline-block;
+        width: 100%;
+    }
+    .form {
+    padding: 0 100px;
+    }
+}
