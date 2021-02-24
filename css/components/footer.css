@@ -50,7 +50,28 @@
     border-radius: 4px;
     text-decoration: none;
     z-index: 999;
+    
 }
+
+.hidden {
+    animation-name: hide;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes hide {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 
 @media (max-width: 900px) {
     .top-link {

@@ -29,6 +29,7 @@ import { contactValidation } from './components/contactValidation.js'
 // Footer
 import { renderSocials } from './components/renderSocials.js'
 import { socialsData } from './data/socialsData.js'
+import {backToTop} from './components/backToTop.js'
 // EXECUTION
 // Nav
 ham();
@@ -63,6 +64,7 @@ forms();
 renderBlog(blogData);
 carousel();
 // Contact
-contactValidation('.form')
+contactValidation('.form');
 // Footer
-renderSocials('.socials', socialsData)
+renderSocials('.socials', socialsData);
+backToTop();
