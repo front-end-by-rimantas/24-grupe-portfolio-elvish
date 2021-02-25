@@ -23,6 +23,7 @@ import { countUp } from './components/statistics/counter.js'
 // Client
 import { owlKarousel } from './components/testimonials-carousel.js';
 // Trusted Clients
+import { renderImages } from './components/trusted-client-images.js';
 // Subscribe
 import { forms } from './components/subscribe-form.js';
 // Blog
@@ -66,6 +67,7 @@ renderWorkSection();
 // Client
 owlKarousel();
 // Trusted Clients
+renderImages();
 // // Subscribe
 forms();
 // Blog
