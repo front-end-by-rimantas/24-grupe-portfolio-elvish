@@ -27,7 +27,7 @@ function renderHtml(array){
 let innerHtml = array.map(function(item){
         return `<div class="education-item">
                     <h4 class="dot-parent">${item.yearsFrom} - ${item.yearsTo} <span class='dot'></span></h4>
-                    <h4>${item.achievement}</h4>
+                    <h3>${item.achievement}</h3>
                     <p>${item.descriptionText}</p>
                 </div>`
     }).join('');
