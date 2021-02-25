@@ -8,9 +8,10 @@ function inViewport(element) {
         pozition.left >= 0 &&
         pozition.bottom <= viewportHeight &&
         pozition.right <= viewportWidth;
-    console.log(isInViewport);
+
     if (isInViewport === true) {
         return true;
+
     }
 
 }

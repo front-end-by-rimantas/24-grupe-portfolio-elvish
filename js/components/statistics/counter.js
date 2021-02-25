@@ -8,7 +8,7 @@ function countUp() {
     window.addEventListener('scroll', function () {
 
         if (inViewport('.statistics') === true) {
-            console.log('matoma');
+
             counters.forEach(counter => {
 
                 const updateCount = () => {
