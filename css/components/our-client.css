@@ -149,14 +149,20 @@
   width: 20px;
   background: #fff;
   animation-name: expand;
-  animation-duration: 1s;
+  animation-duration: 5s;
 }
 
 @keyframes expand {
   0% {
     width: 12px;
   }
-  100% {
+  20% {
     width: 20px;
+  }
+  95% {
+    width: 20px;
+  }
+  100% {
+    width: 12px;
   }
 }
