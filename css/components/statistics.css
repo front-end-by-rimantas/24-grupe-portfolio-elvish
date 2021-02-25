@@ -1,0 +1,58 @@
+.statistics{
+    background-image: url(../../img/Services/service-mountain.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: transparent;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.count-col{
+    width: 22%;
+    
+}
+
+.count-content{
+    border: 1px dotted #e7e7e7;
+    border-radius: 4px;
+    padding: 24px;
+    
+}
+
+.count-icon{
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.count-num{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.count-text{
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: #ffffffb3;
+}
+
+@media(max-width: 990px){
+    .counter{
+        flex-direction: column;
+        
+    }
+
+    .count-col{
+        width: 100%;
+        padding: 24px;
+    }
+}
