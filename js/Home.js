@@ -14,8 +14,10 @@ import { bottomServices } from './data/services.js'
 
 // Statistics
 // Education
+import {renderEducationSection} from './components/education.js'
 // Available Freelancer
 // Work
+import { renderWorkSection } from "./components/our-work.js"
 // Client
 // Trusted Clients
 // Subscribe
@@ -43,13 +45,11 @@ new Services('.bottom-services', bottomServices)
 
 // Statistics
 // Education
+renderEducationSection()
 // Available Freelancer
 // Work
-import { renderWorkSection } from "./components/our-work.js"
+
 import { owlKarouel } from './components/testimonials-carousel.js'
-
-
-
 renderWorkSection();
 
 // Client

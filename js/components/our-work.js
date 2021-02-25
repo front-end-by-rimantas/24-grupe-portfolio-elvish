@@ -205,12 +205,6 @@ function displayMenuButtons(){
 };
 
 
-
-
-
-
-
-
 //function fo export:
 function renderWorkSection(){
     //loads items 
