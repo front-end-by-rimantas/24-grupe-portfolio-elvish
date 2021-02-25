@@ -18,8 +18,10 @@ import { Statistics } from './components/statistics/Statistics.js'
 import { statistics } from './data/statistics.js'
 import { countUp } from './components/statistics/counter.js'
 // Education
+import {renderEducationSection} from './components/education.js'
 // Available Freelancer
 // Work
+import { renderWorkSection } from "./components/our-work.js"
 // Client
 import { owlKarousel } from './components/testimonials-carousel.js';
 // Trusted Clients
@@ -56,14 +58,12 @@ services(bottomServices)
 new Statistics(".counter", statistics)
 countUp()
 // Education
+renderEducationSection()
 // Available Freelancer
 // Work
 import { renderWorkSection } from "./components/our-work.js"
 
-
-
 renderWorkSection();
-
 // Client
 owlKarousel();
 // Trusted Clients
