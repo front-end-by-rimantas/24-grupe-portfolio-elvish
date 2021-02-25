@@ -1,26 +1,39 @@
+import { inViewport } from '../inViewport.js'
+
 function countUp() {
 
     const counters = document.querySelectorAll('.count-num');
-    const speed = 200;
-    counters.forEach(counter => {
+    let countNumber = null;
 
-        const updateCount = () => {
-            const target = +counter.getAttribute('data-target');
-            const count = +counter.innerText;
+    window.addEventListener('scroll', function () {
+
+        if (inViewport('.statistics') === true) {
+            console.log('matoma');
+            counters.forEach(counter => {
+
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    countNumber = target;
 
 
-            if (count < target) {
-                counter.innerText = count + 5;
-                setTimeout(updateCount, 1)
-            }
-            else {
-                counter.innerText = target;
-            }
+                    if (count < target) {
+                        counter.innerText = count + 5;
+                        setTimeout(updateCount, 40)
+                    }
+                    else {
+                        counter.innerText = target;
+                    }
 
+                }
+                updateCount()
+
+
+
+            })
         }
-
-        updateCount();
     })
+
 }
 
 export { countUp }
