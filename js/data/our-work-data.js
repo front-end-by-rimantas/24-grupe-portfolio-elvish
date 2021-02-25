@@ -6,7 +6,7 @@ const workData = [
     title: "creative & art",
     description: ["Illustrations"],
     img: "./img/Work/1.jpg", 
-    selector: 'right-column',
+    
 },
 {
     // cup
@@ -15,7 +15,7 @@ const workData = [
     title: "locked steel gate",
     description: ["Graphics", "UI elements"],
     img: "./img/Work/2.jpg", 
-    selector: 'right-column',
+    
 },
 {
     // book
@@ -24,7 +24,7 @@ const workData = [
     title: "mac sunglasses",
     description: ["Illustrations", "Graphics"],
     img: "./img/Work/3.jpg", 
-    selector: 'right-column',
+    
 },
 {
     // notepad
@@ -33,7 +33,7 @@ const workData = [
     title: "studio and Art",
     description: ["UI elements","Icons"],
     img: "./img/Work/4.jpg", 
-    selector: 'left-column'
+    
 },
 {
     // vinyl
@@ -42,7 +42,7 @@ const workData = [
     title: "open imagination",
     description: ["Media", "Icons"],
     img: "./img/Work/5.jpg", 
-    selector: 'left-column',
+    
 },
 {
     // opened book
@@ -51,7 +51,7 @@ const workData = [
     title: "backpack contents",
     description: ["Design", 'UI'],
     img: "./img/Work/6.jpg", 
-    selector: 'left-column',
+    
 
     
     
