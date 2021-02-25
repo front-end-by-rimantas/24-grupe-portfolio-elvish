@@ -5,7 +5,7 @@ const workData = [
     categories: ["seo", "webdesign"],
     title: "creative & art",
     description: ["Illustrations"],
-    img: "./img/work/1.jpg", 
+    img: "./img/Work/1.jpg", 
 },
 {
     // cup
