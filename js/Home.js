@@ -21,6 +21,7 @@ import { countUp } from './components/statistics/counter.js'
 // Available Freelancer
 // Work
 // Client
+import { owlKarousel } from './components/testimonials-carousel.js';
 // Trusted Clients
 // Subscribe
 import { forms } from './components/subscribe-form.js';
@@ -57,14 +58,13 @@ countUp()
 // Available Freelancer
 // Work
 import { renderWorkSection } from "./components/our-work.js"
-import { owlKarouel } from './components/testimonials-carousel.js'
 
 
 
 renderWorkSection();
 
 // Client
-owlKarouel();
+owlKarousel();
 // Trusted Clients
 // // Subscribe
 forms();
