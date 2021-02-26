@@ -1,3 +1,4 @@
+import { inViewport } from './inViewport.js'
 class ProgressBar {
     constructor(selector, data) {
         this.selector = selector;
@@ -10,8 +11,43 @@ class ProgressBar {
         if (!this.isValidSelector() || !this.isValidData) {
             return false;
         }
-        this.render();
+
+
+
+        // window.addEventListener('scroll', () => {
+
+        //     if (inViewport('.progress-bars') === true) {
+        //         console.log('matoma');
+        //         console.log(inViewport('.progress-bars'));
+        //         this.isVisible()
+
+        //     }
+
+        // })
+
+
+        // this.render();
+        this.isVisible();
+
     }
+
+    isVisible() {
+        let executed = false;
+        if (executed === false) {
+            window.addEventListener('scroll', () => {
+
+                if (inViewport('.progress-bars') === true) {
+                    console.log('matoma');
+                    this.render();
+                    executed = true;
+                }
+
+            })
+        }
+        console.log(executed);
+    }
+
+
 
 
     isValidSelector() {
