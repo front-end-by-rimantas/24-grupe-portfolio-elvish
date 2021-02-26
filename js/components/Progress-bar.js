@@ -1,4 +1,4 @@
-import { inViewport } from './inViewport.js'
+import { fullElementInViewport } from './fullElementInViewport.js'
 class ProgressBar {
     constructor(selector, data) {
         this.selector = selector;
@@ -27,7 +27,7 @@ class ProgressBar {
 
     addEvent() {
         window.addEventListener('scroll', () => {
-            if (inViewport('.progress-bars')) {
+            if (fullElementInViewport('.progress-bars')) {
                 this.isVisible();
 
             }

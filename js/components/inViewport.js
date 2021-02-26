@@ -1,18 +1,24 @@
+
 function inViewport(element) {
+
     const section = document.querySelector(element)
-    const pozition = section.getBoundingClientRect();
-    const viewportWidth = window.innerWidth;
-    const viewportHeight = window.innerHeight;
+    const top = section.offsetTop;
+    const left = section.offsetLeft;
+    const width = section.offsetWidth;
+    const height = section.offsetHeight;
 
-    const isInViewport = pozition.top >= 0 &&
-        pozition.left >= 0 &&
-        pozition.bottom <= viewportHeight &&
-        pozition.right <= viewportWidth;
-
-    if (isInViewport === true) {
-        return true;
-
+    while (element.offsetParent) {
+        element = element.offsetParent;
+        top += element.offsetTop;
+        left += element.offsetLeft;
     }
+
+    return (
+        top < (window.pageYOffset + window.innerHeight) &&
+        left < (window.pageXOffset + window.innerWidth) &&
+        (top + height) > window.pageYOffset &&
+        (left + width) > window.pageXOffset
+    );
 
 }
 
