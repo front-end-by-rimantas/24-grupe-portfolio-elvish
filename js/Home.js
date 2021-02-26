@@ -61,7 +61,7 @@ countUp()
 renderEducationSection()
 // Available Freelancer
 // Work
-import { renderWorkSection } from "./components/our-work.js"
+// import { renderWorkSection } from "./components/our-work.js"
 
 renderWorkSection();
 // Client
