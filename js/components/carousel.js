@@ -10,7 +10,6 @@ function carousel() {
     const item = img.querySelectorAll('.carousel-img')
     const allImages = [...item]
     for (const list of allImages) {
-      console.log(list)
       list.classList.remove('slide-back')
       list.classList.remove('slide');
     }
