@@ -14,16 +14,8 @@ class ProgressBar {
 
 
 
-        // window.addEventListener('scroll', () => {
 
-        //     if (inViewport('.progress-bars') === true) {
-        //         console.log('matoma');
-        //         console.log(inViewport('.progress-bars'));
-        //         this.isVisible()
 
-        //     }
-
-        // })
 
 
         // this.render();
@@ -32,19 +24,13 @@ class ProgressBar {
     }
 
     isVisible() {
-        let executed = false;
-        if (executed === false) {
-            window.addEventListener('scroll', () => {
+        window.addEventListener('scroll', () => {
+            if (inViewport('.progress-bars') === true) {
+                console.log('matoma');
+                this.render();
+            }
+        })
 
-                if (inViewport('.progress-bars') === true) {
-                    console.log('matoma');
-                    this.render();
-                    executed = true;
-                }
-
-            })
-        }
-        console.log(executed);
     }
 
 
@@ -114,12 +100,16 @@ class ProgressBar {
     render() {
         let HTML = '';
 
+
+
         for (const progress of this.data) {
             if (!this.isValidProgressBar(progress)) {
                 continue;
             }
             HTML += this.generateProgressBar(progress)
+
         }
+
 
         this.DOM.innerHTML += HTML;
 
@@ -129,3 +119,39 @@ class ProgressBar {
 }
 
 export { ProgressBar }
+
+
+// render() {
+//     let HTML = '';
+//     let executed = false;
+
+//     if (executed = false) {
+//         for (const progress of this.data) {
+//             if (!this.isValidProgressBar(progress)) {
+//                 continue;
+//             }
+//             HTML += this.generateProgressBar(progress)
+//             executed = true;
+//         }
+//     }
+
+//     this.DOM.innerHTML += HTML;
+
+// }
+
+
+// isVisible() {
+//     let executed = false;
+//     if (executed === false) {
+//         window.addEventListener('scroll', () => {
+
+//             if (inViewport('.progress-bars') === true) {
+//                 console.log('matoma');
+//                 this.render();
+//             }
+//             executed = true;
+
+//         })
+//     }
+//     console.log(executed);
+// }
