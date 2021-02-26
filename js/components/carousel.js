@@ -3,18 +3,24 @@
 let myIndex = 0;
 let timeout;
 function carousel() {
-  const images = document.querySelectorAll('.carousel-img');
-
-  for (const list of images) {
-    list.classList.remove('slide-back')
-    list.classList.remove('slide');
+  const images = document.querySelectorAll('.multi-image');
+  const allImg = [...images]
+  
+  for (const img of allImg) {
+    const item = img.querySelectorAll('.carousel-img')
+    const allImages = [...item]
+    for (const list of allImages) {
+      console.log(list)
+      list.classList.remove('slide-back')
+      list.classList.remove('slide');
+    }
+    myIndex++;
+    if (myIndex > allImages.length) {
+      myIndex = 1;
+    } 
+    allImages[myIndex-1].classList.add('slide');
   }
-  myIndex++;
-  if (myIndex > images.length) {
-    myIndex = 1;
-  } 
-    images[myIndex-1].classList.add('slide');
-
+  
  timeout = setTimeout(carousel, 5000);
 
 }

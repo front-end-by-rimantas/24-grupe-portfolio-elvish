@@ -84,7 +84,7 @@ function blogWithVideo(dataItem){
 
 function blogMorePictures(dataItem) {
     HTML += ` <div class="box">
-    <div class="box-img">
+    <div class="box-img multi-image">
     ${dataItem.image.map(img => `<img class="carousel-img" src="${img}" alt="blog image">`).join('')}
     <a class="slider-prv"><span>&#10094;</span></a>
     <a class="slider-nxt"><span>&#10095;</span></a>

@@ -29,6 +29,24 @@ const blogData = {
             article: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nobis illum cumque deleniti.'
 
         },
+        { 
+            image: ['./img/Blog/blog-1.jpg', './img/Blog/blog-5.jpg'],
+            title: 'Lorem Ipsum is not simply',
+            category: 'food & drinks',
+            date: '13 February 2018',
+            author: 'by envato',
+            article: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nobis illum cumque deleniti.'
+
+        },
+        { 
+            image: ['./img/Blog/blog-2.jpg', './img/Blog/blog-3.jpg'],
+            title: 'Lorem Ipsum is not simply',
+            category: 'food & drinks',
+            date: '13 February 2018',
+            author: 'by envato',
+            article: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nobis illum cumque deleniti.'
+
+        },
     ]
 };
 
