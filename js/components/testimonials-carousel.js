@@ -1,4 +1,4 @@
-function owlKarouel() {
+function owlKarousel() {
     $(".slider").owlCarousel({
         items: 1,
         loop: true,
@@ -13,4 +13,28 @@ function owlKarouel() {
     })
 }
 
-export { owlKarouel }
+export { owlKarousel }
+
+import { testimonials } from '../data/testimonialsData.js';
+
+const DOM = document.querySelector('.slider');
+let HTML = '';
+
+for (let i = 0; i < testimonials.length; i++) {
+    const review = testimonials[i];
+
+    HTML += `
+            <div class="card">
+                <div class="testimonial">
+                    <i class="fa fa-user"></i>
+                    <div class="content">
+                        <h3 class="carousel-names">${review.name}</h3>
+                        <p>${review.text}</p>
+                    </div>
+                </div>
+            </div>
+            `;
+
+}
+
+DOM.innerHTML = HTML;

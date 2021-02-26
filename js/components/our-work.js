@@ -24,7 +24,7 @@ function renderItems(items){
         return `<article data-item-id='${item.id}'  class="display-item">
         
         <div class="work-zoom-img">
-        <img src="${item.img}" alt="">
+        <img src="${item.img}" alt="work img">
         <div class="display-item-overlay">
         <div class="overlay-content">
         <h4>${toTitleCase(item.title)}</h4>
@@ -101,7 +101,7 @@ function renderItems(items){
     });
 
     function currentImageDisplay(position){
-    imageBox.style.background = `url(../img/work/${currentImageIdx}.jpg) center/cover no-repeat`;
+    imageBox.style.background = `url(../img/Work/${currentImageIdx}.jpg) center/cover no-repeat`;
     imgProgress.innerHTML = `<p>${currentImageIdx}/${allImages.length} </p>`
 
 
@@ -203,12 +203,6 @@ function displayMenuButtons(){
     });
 });
 };
-
-
-
-
-
-
 
 
 //function fo export:

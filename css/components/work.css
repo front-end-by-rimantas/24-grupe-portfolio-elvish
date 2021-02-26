@@ -97,7 +97,7 @@
   max-width: 100%;
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   background-position: center;
   background-size: cover;
   transition: transform 1s;
