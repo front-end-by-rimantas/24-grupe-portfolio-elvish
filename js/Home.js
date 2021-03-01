@@ -62,6 +62,7 @@ renderEducationSection()
 // Available Freelancer
 // Work
 
+
 renderWorkSection();
 // Client
 owlKarousel();
