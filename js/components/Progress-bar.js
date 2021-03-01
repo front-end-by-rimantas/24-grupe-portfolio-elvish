@@ -1,3 +1,4 @@
+import { fullElementInViewport } from './fullElementInViewport.js'
 class ProgressBar {
     constructor(selector, data) {
         this.selector = selector;
@@ -10,8 +11,30 @@ class ProgressBar {
         if (!this.isValidSelector() || !this.isValidData) {
             return false;
         }
+
         this.render();
+        this.addEvent();
+
     }
+
+    isVisible() {
+        const visableSection = document.querySelectorAll('[data-inviewport]');
+
+        for (let i = 0; i < visableSection.length; i++) {
+            visableSection[i].classList.add('loading');
+        }
+    }
+
+    addEvent() {
+        window.addEventListener('scroll', () => {
+            if (fullElementInViewport('.progress-bars')) {
+                this.isVisible();
+
+            }
+        })
+    }
+
+
 
 
     isValidSelector() {
@@ -68,7 +91,7 @@ class ProgressBar {
                     </div>
                     <div class="bar">
                         <div class="progress" style="width:${this.formatNumber(progressBar.value)}%; ">
-                            <div class="loading"></div>
+                            <div data-inviewport="" class=""></div>
                         </div>
                     </div>
         
@@ -78,12 +101,17 @@ class ProgressBar {
     render() {
         let HTML = '';
 
+
+
         for (const progress of this.data) {
             if (!this.isValidProgressBar(progress)) {
                 continue;
             }
+
             HTML += this.generateProgressBar(progress)
+
         }
+
 
         this.DOM.innerHTML += HTML;
 
@@ -93,3 +121,5 @@ class ProgressBar {
 }
 
 export { ProgressBar }
+
+

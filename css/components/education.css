@@ -56,12 +56,22 @@
   top: 3px;
 }
 
+.education-item h4 {
+}
+.education-item h3 {
+  font-size: 20px;
+  padding: 10px 0 10px 0;
+}
+.education-item p {
+  line-height: 27px;
+}
+
 @media (max-width: 990px) {
   .education-container > .long-row {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 90%;
   }
 
   .long-row .right-column {
