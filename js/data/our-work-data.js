@@ -32,7 +32,7 @@ const workData = [
     categories: ["webdesign", "wordpress"],
     title: "studio and Art",
     description: ["UI elements","Icons"],
-    img: "../../img/Work/4.jpg, 
+    img: "../../img/Work/4.jpg", 
     
 },
 {
