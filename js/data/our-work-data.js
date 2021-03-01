@@ -5,7 +5,7 @@ const workData = [
     categories: ["seo", "webdesign"],
     title: "creative & art",
     description: ["Illustrations"],
-    img: "../../img/Work/1.jpg", 
+    img: "./img/Work/1.jpg", 
     
 },
 {
@@ -14,7 +14,7 @@ const workData = [
     categories: ["seo", "webdesign"],
     title: "locked steel gate",
     description: ["Graphics", "UI elements"],
-    img: "../../img/Work/2.jpg", 
+    img: "./img/Work/2.jpg", 
     
 },
 {
@@ -23,7 +23,7 @@ const workData = [
     categories: ["seo", "work"],
     title: "mac sunglasses",
     description: ["Illustrations", "Graphics"],
-    img: "../../img/Work/3.jpg", 
+    img: "./img/Work/3.jpg", 
     
 },
 {
@@ -32,7 +32,7 @@ const workData = [
     categories: ["webdesign", "wordpress"],
     title: "studio and Art",
     description: ["UI elements","Icons"],
-    img: "../../img/Work/4.jpg", 
+    img: "./img/Work/4.jpg", 
     
 },
 {
@@ -41,7 +41,7 @@ const workData = [
     categories: ["work"],
     title: "open imagination",
     description: ["Media", "Icons"],
-    img: "../../img/Work/5.jpg", 
+    img: "./img/Work/5.jpg", 
     
 },
 {
@@ -50,7 +50,7 @@ const workData = [
     categories: ["wordpress"],
     title: "backpack contents",
     description: ["Design", 'UI'],
-    img: "../../img/Work/6.jpg", 
+    img: "./img/Work/6.jpg", 
     
 
     
