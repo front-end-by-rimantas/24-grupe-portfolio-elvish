@@ -18,7 +18,7 @@ import { Statistics } from './components/statistics/Statistics.js'
 import { statistics } from './data/statistics.js'
 import { countUp } from './components/statistics/counter.js'
 // Education
-import {renderEducationSection} from './components/education.js'
+import { renderEducationSection } from './components/education.js'
 // Available Freelancer
 // Work
 import { renderWorkSection } from "./components/our-work.js"
@@ -61,7 +61,7 @@ countUp()
 renderEducationSection()
 // Available Freelancer
 // Work
-import { renderWorkSection } from "./components/our-work.js"
+
 
 renderWorkSection();
 // Client
